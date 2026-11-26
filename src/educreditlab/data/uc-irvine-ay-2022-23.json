@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "issuer": "glendale-cc",
+  "receiver": "uc-irvine",
+  "programme": "cse-bs",
+  "version": "ay-2022-23",
+  "valid_from": "2022-07-01",
+  "valid_until": "2023-07-01",
+  "unit": "quarter units",
+  "cap": null,
+  "group_caps": {},
+  "kind": "historical-extract",
+  "provenance": {
+    "title": "ASSIST · 2022–2023 Articulation Agreement by Major · Computer Science and Engineering, B.S.",
+    "url": "https://assist.org/api/artifacts/26288138",
+    "note": "Selected rows from pp. 1–2. The fixture applies B to the listed calculus and physics preparation rows. C for the programming series and I&C SCI 46 is a lab assumption. Date boundaries are a lab convention."
+  },
+  "rules": [
+    {
+      "id": "ics-31-33",
+      "label": "I&C SCI 31 + 32 + 33",
+      "units": 1200,
+      "group": "computing",
+      "evidence": "ASSIST Irvine p. 1: both Glendale programming courses form one equivalence. C is a lab threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 135",
+              "min_grade": "C"
+            },
+            {
+              "course": "CS/IS 137",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ics-46",
+      "label": "I&C SCI 46 · Data Structures",
+      "units": 400,
+      "group": "computing",
+      "evidence": "ASSIST Irvine p. 2: the two source Data Structures courses are jointly required. C is a lab threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 211",
+              "min_grade": "C"
+            },
+            {
+              "course": "CS/IS 212",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-2a",
+      "label": "MATH 2A · Calculus I",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 103E",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 103EH",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-2b",
+      "label": "MATH 2B · Calculus II",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 104E",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 104EH",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-series",
+      "label": "PHYSICS 7C + 7LC + 7D + 7LD",
+      "units": 1000,
+      "group": "physics",
+      "evidence": "ASSIST Irvine pp. 1–2: the two-course source physics sequence maps to the linked target courses and labs.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "PHY 101",
+              "min_grade": "B"
+            },
+            {
+              "course": "PHY 102",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "PHY 101H",
+              "min_grade": "B"
+            },
+            {
+              "course": "PHY 102",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reuse": []
+}

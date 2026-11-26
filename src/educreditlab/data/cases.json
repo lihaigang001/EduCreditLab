@@ -1,0 +1,200 @@
+[
+  {
+    "id": "programming-calculus",
+    "label_zh": "编程与微积分",
+    "description_zh": "同一份成绩单在两所接收院校得到不同结果。",
+    "transcript": {
+      "schema": 1,
+      "issuer": "glendale-cc",
+      "holder": "programming-calculus",
+      "attempts": [
+        {
+          "id": "a-01",
+          "course": "CS/IS 135",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-02",
+          "course": "CS/IS 137",
+          "grade": "C",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-03",
+          "course": "MATH 103EH",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-04",
+          "course": "MATH 104E",
+          "grade": "C",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-05",
+          "course": "CS/IS 211",
+          "grade": "C",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-06",
+          "course": "PHY 101",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        }
+      ]
+    }
+  },
+  {
+    "id": "retake-after-cutoff",
+    "label_zh": "截止日之后重修",
+    "description_zh": "比较 6 月 15 日和 6 月 30 日认定时点。",
+    "transcript": {
+      "schema": 1,
+      "issuer": "glendale-cc",
+      "holder": "retake-after-cutoff",
+      "attempts": [
+        {
+          "id": "a-01",
+          "course": "CS/IS 135",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-02",
+          "course": "CS/IS 137",
+          "grade": "D",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-03",
+          "course": "CS/IS 137",
+          "grade": "B",
+          "completed_on": "2023-06-24"
+        },
+        {
+          "id": "a-04",
+          "course": "MATH 103E",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-05",
+          "course": "MATH 104EH",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        }
+      ]
+    }
+  },
+  {
+    "id": "mixed-honors",
+    "label_zh": "常规与荣誉课程组合",
+    "description_zh": "查看线性代数、微分方程及物理课程的多条认定路径。",
+    "transcript": {
+      "schema": 1,
+      "issuer": "glendale-cc",
+      "holder": "mixed-honors",
+      "attempts": [
+        {
+          "id": "a-01",
+          "course": "MATH 107",
+          "grade": "C",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-02",
+          "course": "MATH 108H",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-03",
+          "course": "MATH 105H",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-04",
+          "course": "PHY 101H",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-05",
+          "course": "PHY 102",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-06",
+          "course": "CS/IS 112",
+          "grade": "B",
+          "completed_on": "2023-05-24"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cap-scenario",
+    "label_zh": "学分上限测试",
+    "description_zh": "合成政策为候选学分设置上限，可展开查看受限原因。",
+    "transcript": {
+      "schema": 1,
+      "issuer": "glendale-cc",
+      "holder": "cap-scenario",
+      "attempts": [
+        {
+          "id": "a-01",
+          "course": "CS/IS 135",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-02",
+          "course": "CS/IS 137",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-03",
+          "course": "CS/IS 211",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-04",
+          "course": "CS/IS 212",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-05",
+          "course": "MATH 103E",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-06",
+          "course": "MATH 104E",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-07",
+          "course": "PHY 101",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        },
+        {
+          "id": "a-08",
+          "course": "PHY 102",
+          "grade": "A",
+          "completed_on": "2023-05-24"
+        }
+      ]
+    }
+  }
+]

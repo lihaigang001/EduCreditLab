@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>EduCreditLab · 跨校学分认定</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/"><span class="mark" aria-hidden="true">E</span>EduCreditLab</a>
+      <nav aria-label="工作区导航">
+        <button class="nav-button active" type="button" data-view="compare" aria-current="page">认定对照</button>
+        <button class="nav-button" type="button" data-view="policies">政策库</button>
+        <button class="nav-button" type="button" data-view="ledger">存证与回放</button>
+      </nav>
+      <div id="network-label" class="network-label"></div>
+    </div>
+  </header>
+  <main>
+    <div id="global-status" role="status" aria-live="polite" hidden></div>
+    <section id="compare">
+      <header class="page-heading">
+        <h1>跨校学分认定</h1>
+        <p>比较同一份修读记录适用的课程认定规则，查看认定依据和缺少的条件。</p>
+      </header>
+      <div class="workspace">
+        <aside class="card input-card">
+          <form id="compare-form">
+            <h2>选择案例</h2>
+            <label for="case-select">合成成绩单</label>
+            <select id="case-select"></select>
+            <p id="case-description" class="quiet"></p>
+            <div id="transcript-preview"></div>
+            <label class="file-label" for="transcript-file">导入成绩单 JSON</label>
+            <input type="file" id="transcript-file" accept=".json,application/json">
+            <hr>
+            <label for="compare-type">对照方式</label>
+            <select id="compare-type">
+              <option value="institutions">跨校对照</option>
+              <option value="versions">政策版本对照</option>
+              <option value="timeline">同日政策追溯</option>
+            </select>
+            <div id="target-fields" class="target-fields"></div>
+            <button class="primary" type="submit" id="solve-button">计算认定结果</button>
+          </form>
+        </aside>
+        <div class="results">
+          <div class="results-heading">
+            <h2>认定结果</h2>
+            <p class="quiet">仅计算所选规则的名义目标学分，各校使用各自的学分单位。</p>
+          </div>
+          <div id="results" class="results-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+    <section id="policies" hidden>
+      <header class="page-heading">
+        <h1>政策库</h1>
+        <p>查看每版规则的适用日期、来源和登记摘要。</p>
+      </header>
+      <div id="policy-items" class="stack"></div>
+    </section>
+    <section id="ledger" hidden>
+      <header class="page-heading">
+        <h1>存证与回放</h1>
+        <p>查看已提交的区块、签名及回执，复算原认定结果。</p>
+      </header>
+      <div class="card ledger-summary" id="ledger-summary"></div>
+      <div class="card history">
+        <h2>提交记录</h2>
+        <div class="history-controls" id="history-controls" aria-label="提交记录分页"></div>
+        <div id="ledger-items"></div>
+      </div>
+      <form class="card verifier" id="verifier">
+        <h2>验证导出的证明</h2>
+        <label for="verify-mode">核验类型</label>
+        <select id="verify-mode">
+          <option value="proof">回执或存证证明</option>
+          <option value="attestation">审核确认书</option>
+          <option value="quorum">多方审核确认书</option>
+          <option value="history">审核规则历史</option>
+          <option value="revision">绑定规则版本的审核确认书</option>
+          <option value="divergence">审核规则分歧证据</option>
+          <option value="resolution">审核规则分歧裁定书</option>
+          <option value="publication">院校裁定发布历史</option>
+          <option value="publication-witness">院校裁定发布证明</option>
+          <option value="publication-batch">批量裁定发布证明</option>
+        </select>
+        <label for="proof-file" id="proof-file-label">选择文件</label>
+        <input type="file" id="proof-file" accept=".json,.json.gz,application/json,application/gzip" required>
+        <p class="quiet">支持 JSON 和 gzip。上传上限 16 MiB，gzip 解压上限 64 MiB。更大的证明可在命令行核验。</p>
+        <fieldset class="verification-fields" id="proof-verification-fields">
+          <label for="fingerprint">独立获取的信任清单 SHA-256</label>
+          <input type="text" id="fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <details class="checkpoint-field">
+            <summary>使用检查点核验精简证明</summary>
+            <label for="checkpoint-fingerprint">独立核验的检查点 SHA-256</label>
+            <input type="text" id="checkpoint-fingerprint" pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+            <label for="plan-fingerprint">审核计划 SHA-256（按计划导出的批量证明）</label>
+            <input type="text" id="plan-fingerprint" pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+            <p class="quiet">精简证明需要独立取得检查点指纹。按计划导出的证明还需要双方确认的计划指纹。</p>
+          </details>
+        </fieldset>
+        <fieldset class="verification-fields" id="attestation-verification-fields" hidden disabled>
+          <label for="reviewer-fingerprint">可信审核公钥 SHA-256</label>
+          <input type="text" id="reviewer-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="attested-plan-fingerprint">独立确认的审核计划 SHA-256</label>
+          <input type="text" id="attested-plan-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+        </fieldset>
+        <fieldset class="verification-fields" id="quorum-verification-fields" hidden disabled>
+          <label for="quorum-policy-fingerprint">独立确认的审核人规则 SHA-256</label>
+          <input type="text" id="quorum-policy-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+        </fieldset>
+        <fieldset class="verification-fields" id="history-verification-fields" hidden disabled>
+          <label for="history-initial-fingerprint">可信初始审核规则 SHA-256</label>
+          <input type="text" id="history-initial-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="history-revision-fingerprint">独立确认的最新规则版本 SHA-256</label>
+          <input type="text" id="history-revision-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+        </fieldset>
+        <fieldset class="verification-fields" id="revision-verification-fields" hidden disabled>
+          <label for="revision-history-file">审核规则历史</label>
+          <input type="file" id="revision-history-file" accept=".json,.json.gz,application/json,application/gzip" required>
+          <label for="revision-initial-fingerprint">可信初始审核规则 SHA-256</label>
+          <input type="text" id="revision-initial-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="revision-latest-fingerprint">独立确认的最新规则版本 SHA-256</label>
+          <input type="text" id="revision-latest-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="selected-review-revision">确认书采用的规则版本（留空核验最新版本）</label>
+          <input type="text" id="selected-review-revision" inputmode="numeric" pattern="[1-9][0-9]{0,6}" autocomplete="off">
+          <p class="quiet">规则历史和确认书合计上传上限为 16 MiB。可在命令行进一步复查原始证据。</p>
+        </fieldset>
+        <fieldset class="verification-fields" id="divergence-verification-fields" hidden disabled>
+          <label for="divergence-initial-fingerprint">可信初始审核规则 SHA-256</label>
+          <input type="text" id="divergence-initial-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+        </fieldset>
+        <fieldset class="verification-fields" id="resolution-verification-fields" hidden disabled>
+          <label for="resolution-authority-fingerprint">独立确认的裁定权限 SHA-256</label>
+          <input type="text" id="resolution-authority-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="resolution-decision-fingerprint">独立确认的裁定正文 SHA-256</label>
+          <input type="text" id="resolution-decision-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+        </fieldset>
+        <fieldset class="verification-fields" id="publication-verification-fields" hidden disabled>
+          <label for="publication-authority-fingerprint">独立确认的初始裁定权限 SHA-256</label>
+          <input type="text" id="publication-authority-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="publication-tip-fingerprint">独立确认的最新发布记录 SHA-256</label>
+          <input type="text" id="publication-tip-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+        </fieldset>
+        <fieldset class="verification-fields" id="publication-witness-verification-fields" hidden disabled>
+          <label for="publication-checkpoint-fingerprint">独立核准的发布检查点 SHA-256</label>
+          <input type="text" id="publication-checkpoint-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="selected-publication">指定发布序号（留空核验检查点末条）</label>
+          <input type="text" id="selected-publication" inputmode="numeric" pattern="[1-9][0-9]{0,6}" autocomplete="off">
+          <p class="quiet">裁定书、联合确认书及原始证据可在命令行继续复核。</p>
+        </fieldset>
+        <fieldset class="verification-fields" id="publication-batch-verification-fields" hidden disabled>
+          <label for="publication-batch-fingerprint">独立核准的发布检查点 SHA-256</label>
+          <input type="text" id="publication-batch-fingerprint" required pattern="[0-9a-f]{64}" spellcheck="false" autocomplete="off">
+          <label for="selected-publications">预期发布序号（用逗号或空格分隔）</label>
+          <input type="text" id="selected-publications" required spellcheck="false" autocomplete="off">
+        </fieldset>
+        <button class="primary" type="submit">验证并回放</button>
+      </form>
+      <details class="card verifier" id="batch-results" hidden>
+        <summary>批量回执明细</summary>
+        <ol id="batch-receipts"></ol>
+      </details>
+      <details class="card verifier" id="publication-batch-results" hidden>
+        <summary>批量裁定发布明细</summary>
+        <ul id="batch-publications"></ul>
+      </details>
+    </section>
+    <footer>EduCreditLab v1.28.0 · 研究工作台 · 认定结果供院校审核</footer>
+  </main>
+</body>
+</html>

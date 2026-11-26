@@ -1,0 +1,295 @@
+{
+  "schema": 1,
+  "issuer": "glendale-cc",
+  "receiver": "uc-merced",
+  "programme": "cse-bs",
+  "version": "ay-2022-23",
+  "valid_from": "2022-07-01",
+  "valid_until": "2023-07-01",
+  "unit": "semester units",
+  "cap": null,
+  "group_caps": {},
+  "kind": "historical-extract",
+  "provenance": {
+    "title": "ASSIST · 2022–2023 Articulation Agreement by Major · Computer Science and Engineering, B.S.",
+    "url": "https://assist.org/api/artifacts/26519273",
+    "note": "Selected preparation and articulation rows from pp. 1–3. CSE 020/021 is modeled as a zero-unit historical admission-preparation check. Only the printed reuse with CSE 022 is enabled for those rows. Date boundaries are a lab convention."
+  },
+  "rules": [
+    {
+      "id": "cse-020-021",
+      "label": "CSE 020 + 021 · Historical preparation",
+      "units": 0,
+      "group": "computing",
+      "evidence": "ASSIST Merced pp. 1–2: one listed Glendale programming course can cover both preparation rows with B. The series had been discontinued at Merced, so this check adds zero units.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 112",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "CS/IS 135",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cse-022",
+      "label": "CSE 022 · Introduction to Programming",
+      "units": 400,
+      "group": "computing",
+      "evidence": "ASSIST Merced pp. 1–3: either listed Glendale course applies. The stated dual-counting exception permits reuse with the 020/021 preparation check.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 112",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "CS/IS 135",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cse-030",
+      "label": "CSE 030 · Data Structures",
+      "units": 400,
+      "group": "computing",
+      "evidence": "ASSIST Merced p. 3: CS/IS 211 is listed for the historical CSE 030 preparation row.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 211",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-021",
+      "label": "MATH 021 · Calculus I",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Merced pp. 1–2: regular and honors Calculus I, with the C preparation threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 103E",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 103EH",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-022",
+      "label": "MATH 022 · Calculus II",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Merced pp. 1–2: regular and honors Calculus II, with the C preparation threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 104E",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 104EH",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-023",
+      "label": "MATH 023 · Vector Calculus",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Merced pp. 2–3: either listed multivariable calculus course applies.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 105",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 105H",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-024",
+      "label": "MATH 024 · Linear Algebra and Differential Equations",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Merced p. 3: one Linear Algebra course and one Differential Equations course, regular or honors.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 107",
+              "min_grade": "C"
+            },
+            {
+              "course": "MATH 108",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 107H",
+              "min_grade": "C"
+            },
+            {
+              "course": "MATH 108H",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-3",
+          "all_of": [
+            {
+              "course": "MATH 107",
+              "min_grade": "C"
+            },
+            {
+              "course": "MATH 108H",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-4",
+          "all_of": [
+            {
+              "course": "MATH 107H",
+              "min_grade": "C"
+            },
+            {
+              "course": "MATH 108",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys-008-008l",
+      "label": "PHYS 008 + 008L · Mechanics",
+      "units": 400,
+      "group": "physics",
+      "evidence": "ASSIST Merced p. 3: PHY 101 or PHY 101H covers the listed mechanics course and lab.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "PHY 101",
+              "min_grade": "C"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "PHY 101H",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phys-009-009l",
+      "label": "PHYS 009 + 009L · Electricity and Magnetism",
+      "units": 400,
+      "group": "physics",
+      "evidence": "ASSIST Merced p. 3: PHY 102 covers the listed physics course and lab.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "PHY 102",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reuse": [
+    {
+      "course": "CS/IS 112",
+      "rules": [
+        "cse-020-021",
+        "cse-022"
+      ]
+    },
+    {
+      "course": "CS/IS 135",
+      "rules": [
+        "cse-020-021",
+        "cse-022"
+      ]
+    }
+  ]
+}

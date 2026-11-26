@@ -1,0 +1,154 @@
+{
+  "schema": 1,
+  "issuer": "glendale-cc",
+  "receiver": "uc-irvine",
+  "programme": "cse-bs",
+  "version": "sim-ay2022-23-r2",
+  "valid_from": "2023-06-01",
+  "valid_until": "2023-07-01",
+  "unit": "quarter units",
+  "cap": null,
+  "group_caps": {},
+  "kind": "synthetic",
+  "provenance": {
+    "title": "Synthetic within-year amendment for the Irvine example",
+    "url": null,
+    "note": "Laboratory assumption: increase the minimum in both Programming Series clauses from C to B for the June 2023 effective window. Registration occurs in the current lab run."
+  },
+  "rules": [
+    {
+      "id": "ics-31-33",
+      "label": "I&C SCI 31 + 32 + 33",
+      "units": 1200,
+      "group": "computing",
+      "evidence": "Simulated same-year amendment: both Glendale programming grades must meet B during June 2023.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 135",
+              "min_grade": "B"
+            },
+            {
+              "course": "CS/IS 137",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ics-46",
+      "label": "I&C SCI 46 · Data Structures",
+      "units": 400,
+      "group": "computing",
+      "evidence": "ASSIST Irvine p. 2: the two source Data Structures courses are jointly required. C is a lab threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "CS/IS 211",
+              "min_grade": "C"
+            },
+            {
+              "course": "CS/IS 212",
+              "min_grade": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-2a",
+      "label": "MATH 2A · Calculus I",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 103E",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 103EH",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-2b",
+      "label": "MATH 2B · Calculus II",
+      "units": 400,
+      "group": "mathematics",
+      "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "MATH 104E",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "MATH 104EH",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physics-series",
+      "label": "PHYSICS 7C + 7LC + 7D + 7LD",
+      "units": 1000,
+      "group": "physics",
+      "evidence": "ASSIST Irvine pp. 1–2: the two-course source physics sequence maps to the linked target courses and labs.",
+      "options": [
+        {
+          "id": "route-1",
+          "all_of": [
+            {
+              "course": "PHY 101",
+              "min_grade": "B"
+            },
+            {
+              "course": "PHY 102",
+              "min_grade": "B"
+            }
+          ]
+        },
+        {
+          "id": "route-2",
+          "all_of": [
+            {
+              "course": "PHY 101H",
+              "min_grade": "B"
+            },
+            {
+              "course": "PHY 102",
+              "min_grade": "B"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reuse": []
+}

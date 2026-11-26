@@ -1,0 +1,553 @@
+{
+  "schema": 1,
+  "manifest": {
+    "schema": 1,
+    "network": "dda5fca4667144279294076e8e45a54c",
+    "mode": "consortium",
+    "actors": {
+      "glendale-cc": "18867a91ecd291a72b38442496ebac649a83143b62118779bcfa1e38f843abeb",
+      "uc-irvine": "cdbdb18c07f13c9121800822e3ecd50b03cbf45ede30e21562d6c4ec7a2f80db",
+      "uc-merced": "99620811816bc50c2b737741a6d6d2fb500e58e4c8b61bbab92c37616b62a1d3"
+    },
+    "validators": {
+      "peer-a": "b4fd7ce7abcdd7bfe71dd7d277c08b43026287458e89dc3ed26e0ac257fd62fd",
+      "peer-b": "7d4cacbe695a106957905bcf882c8c692cc4f9685e7f94df36fd9f0f7bd7011a",
+      "peer-c": "6813e4aff37618a6d0bb4abf623ac38fc3e4748f546e882ff97096abc54ea0f6",
+      "peer-d": "fe041a0b13cc4caf909ee6e79d01a0776b8978113e0ea6f16c51a3805479be1e"
+    },
+    "quorum": 3
+  },
+  "chain": [
+    {
+      "core": {
+        "event": {
+          "body": {
+            "actor": "uc-irvine",
+            "kind": "policy",
+            "network": "dda5fca4667144279294076e8e45a54c",
+            "payload": {
+              "issuer": "glendale-cc",
+              "policy_sha256": "2aeedb02451290541bdeba9fbb6acaa1b06440d67e2642b3fc28c631c0470b08",
+              "programme": "cse-bs",
+              "receiver": "uc-irvine",
+              "valid_from": "2022-07-01",
+              "valid_until": "2023-07-01",
+              "version": "ay-2022-23"
+            }
+          },
+          "signature": "65eba1f25cc5bca643839a660bd5086bd4551e2029489a762c742b158e8ddce9d418a83619e33a59a76c16ff8eac51695d1057ceed9a5e496766637f326cab0f"
+        },
+        "height": 1,
+        "network": "dda5fca4667144279294076e8e45a54c",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "recorded_at": "2026-11-22T10:08:13.276290+00:00"
+      },
+      "hash": "ef4fb8c9fe81214f32b263c774a832027f1a265773ad27b25fc93087ce6b060b",
+      "votes": {
+        "peer-a": "6d0b9b92de867a1ec59b1ecd2fbec9dda153550bd7df992e6127e7f7bf5b369f1dca897fc0f27f18c20eee7dca1d07911a259e36d1732d6e7deddf4eae26dd0a",
+        "peer-b": "5e426ce008d9739394accbcdc0e3f10ca3f54a8194935c4788ede222a65942a058f0ab369e9fab7eba1b01181cbe6d80bf38fbc2bff2c8444d1fc71a614d7b0d",
+        "peer-c": "b2338f5792a5c3ca32b27c813d062e35c150ea7640d28641efe0081616bab2f75aad68479d816a1bdfe01ad76e2deadd536334203d8e3102344f40a012f26005",
+        "peer-d": "53cde46bff81787285f101cdd1384691d38c4714704de41dd93b0983b4a99f2ed6af4bb98834a17c064028c4b7fd44caeca10634eaf28a3748fb863d72e6440c"
+      }
+    },
+    {
+      "core": {
+        "event": {
+          "body": {
+            "actor": "uc-merced",
+            "kind": "policy",
+            "network": "dda5fca4667144279294076e8e45a54c",
+            "payload": {
+              "issuer": "glendale-cc",
+              "policy_sha256": "cb9a83cce0f799454f0f6f47bf106a9142911a9bd41600c1b8ef771027d9eb18",
+              "programme": "cse-bs",
+              "receiver": "uc-merced",
+              "valid_from": "2022-07-01",
+              "valid_until": "2023-07-01",
+              "version": "ay-2022-23"
+            }
+          },
+          "signature": "c2fc8b76bd10c6b1128108d5ab3014cb8696f15f7fbd72a489189ebb317f0c0ad2e97f35205c06e080be8f9d7f16ab663bb17715bfcd602f811aaf869734bc00"
+        },
+        "height": 2,
+        "network": "dda5fca4667144279294076e8e45a54c",
+        "previous": "ef4fb8c9fe81214f32b263c774a832027f1a265773ad27b25fc93087ce6b060b",
+        "recorded_at": "2026-11-22T10:08:13.295556+00:00"
+      },
+      "hash": "8c2f5f4b6d78320eff0d5726867f08a384264115583235b864014bf295e6f960",
+      "votes": {
+        "peer-a": "3135f17dd27da19a6f9c155416ee7a84e1a609012463531ad87bfcfff6d0bb0e3710e21c37dc89876e6058df4be9f2221d3b7e1f6d889344816f1bdb9526d00b",
+        "peer-b": "72b95e57d75378738e6b0498164197ee0556f0d14558f1fb32779259e2d3b4dc571bc7ece1b8725fe95f7d316b7c90fd044aa7181357bc5510a8497be4ff9707",
+        "peer-c": "27f36e199e26d95ed2ec4b260ca8f9fdaf98bc2566346aa81e0557f7173ccbae20aa20530d1b9367ee6284b0f7d540e33d5df13af531eb1622616e374ada9c05",
+        "peer-d": "95e4f9c93e77b07e0a491d9a2d6b3686a4ba37ff85b1566a8811c6765a346f73e4cbba4a6502c003b0630f0fa05eadebd68113f1680e1c3930f76049eb45500e"
+      }
+    },
+    {
+      "core": {
+        "event": {
+          "body": {
+            "actor": "uc-irvine",
+            "kind": "receipt",
+            "network": "dda5fca4667144279294076e8e45a54c",
+            "payload": {
+              "policy_sha256": "2aeedb02451290541bdeba9fbb6acaa1b06440d67e2642b3fc28c631c0470b08",
+              "receipt_sha256": "b01e87eb37183cb2dcf1ee4d3e1876de6976c46a68710f2acbb397cfef3c2562"
+            }
+          },
+          "signature": "6cfc92a8d68fa0adc982f9961634528737a79d69352120b164e19d390313f62fbbf056f96f56fb8ad6b58ce2e78af913f32ed7f3abd6f8fb7f80e184c9c39e0c"
+        },
+        "height": 3,
+        "network": "dda5fca4667144279294076e8e45a54c",
+        "previous": "8c2f5f4b6d78320eff0d5726867f08a384264115583235b864014bf295e6f960",
+        "recorded_at": "2026-11-22T10:08:13.324502+00:00"
+      },
+      "hash": "08b287ec6beca103a7a43f595ea4435d09bb3a595f9031db64f57cd6142e481d",
+      "votes": {
+        "peer-a": "f1fe471af51b81ee4400f72fe39d6ab8a748186a27acea07ed2265cd2e74f1666f57d0638b7b2ef396899bbd0c3df7c338292d7b60f6629182b11aad88ac6102",
+        "peer-b": "d64cf148061b73b61ef344a40c72a068e1634c9e69ce1eccf83fc1f1516addb714450f39aea8e383ded8b65c47ba372eed7077c74195042158a16140abf60705",
+        "peer-c": "8bef840e1bb97509498c834037bb3ab0e61a3369e0214ee394b8adafe63a984017886ed38fdae8d608ddc556584e505d33460f5c11f740dec237badd658d5802",
+        "peer-d": "5ef907fb4bef5e7c344ed34593cd1d6d9e1d83653a696ae67b87687824c32dfeccab1e0bb1e45e2ce0fa331acc4f7a821e1cfaa3a9bea28cf2cdb731c0abc508"
+      }
+    }
+  ],
+  "policy": {
+    "cap": null,
+    "group_caps": {},
+    "issuer": "glendale-cc",
+    "kind": "historical-extract",
+    "programme": "cse-bs",
+    "provenance": {
+      "note": "Selected rows from pp. 1–2. The fixture applies B to the listed calculus and physics preparation rows. C for the programming series and I&C SCI 46 is a lab assumption. Date boundaries are a lab convention.",
+      "title": "ASSIST · 2022–2023 Articulation Agreement by Major · Computer Science and Engineering, B.S.",
+      "url": "https://assist.org/api/artifacts/26288138"
+    },
+    "receiver": "uc-irvine",
+    "reuse": [],
+    "rules": [
+      {
+        "evidence": "ASSIST Irvine p. 1: both Glendale programming courses form one equivalence. C is a lab threshold.",
+        "group": "computing",
+        "id": "ics-31-33",
+        "label": "I&C SCI 31 + 32 + 33",
+        "options": [
+          {
+            "all_of": [
+              {
+                "course": "CS/IS 135",
+                "min_grade": "C"
+              },
+              {
+                "course": "CS/IS 137",
+                "min_grade": "C"
+              }
+            ],
+            "id": "route-1"
+          }
+        ],
+        "units": 1200
+      },
+      {
+        "evidence": "ASSIST Irvine p. 2: the two source Data Structures courses are jointly required. C is a lab threshold.",
+        "group": "computing",
+        "id": "ics-46",
+        "label": "I&C SCI 46 · Data Structures",
+        "options": [
+          {
+            "all_of": [
+              {
+                "course": "CS/IS 211",
+                "min_grade": "C"
+              },
+              {
+                "course": "CS/IS 212",
+                "min_grade": "C"
+              }
+            ],
+            "id": "route-1"
+          }
+        ],
+        "units": 400
+      },
+      {
+        "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+        "group": "mathematics",
+        "id": "math-2a",
+        "label": "MATH 2A · Calculus I",
+        "options": [
+          {
+            "all_of": [
+              {
+                "course": "MATH 103E",
+                "min_grade": "B"
+              }
+            ],
+            "id": "route-1"
+          },
+          {
+            "all_of": [
+              {
+                "course": "MATH 103EH",
+                "min_grade": "B"
+              }
+            ],
+            "id": "route-2"
+          }
+        ],
+        "units": 400
+      },
+      {
+        "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+        "group": "mathematics",
+        "id": "math-2b",
+        "label": "MATH 2B · Calculus II",
+        "options": [
+          {
+            "all_of": [
+              {
+                "course": "MATH 104E",
+                "min_grade": "B"
+              }
+            ],
+            "id": "route-1"
+          },
+          {
+            "all_of": [
+              {
+                "course": "MATH 104EH",
+                "min_grade": "B"
+              }
+            ],
+            "id": "route-2"
+          }
+        ],
+        "units": 400
+      },
+      {
+        "evidence": "ASSIST Irvine pp. 1–2: the two-course source physics sequence maps to the linked target courses and labs.",
+        "group": "physics",
+        "id": "physics-series",
+        "label": "PHYSICS 7C + 7LC + 7D + 7LD",
+        "options": [
+          {
+            "all_of": [
+              {
+                "course": "PHY 101",
+                "min_grade": "B"
+              },
+              {
+                "course": "PHY 102",
+                "min_grade": "B"
+              }
+            ],
+            "id": "route-1"
+          },
+          {
+            "all_of": [
+              {
+                "course": "PHY 101H",
+                "min_grade": "B"
+              },
+              {
+                "course": "PHY 102",
+                "min_grade": "B"
+              }
+            ],
+            "id": "route-2"
+          }
+        ],
+        "units": 1000
+      }
+    ],
+    "schema": 1,
+    "unit": "quarter units",
+    "valid_from": "2022-07-01",
+    "valid_until": "2023-07-01",
+    "version": "ay-2022-23"
+  },
+  "receipt": {
+    "body": {
+      "decision": {
+        "as_of": "2023-06-15",
+        "issuer": "glendale-cc",
+        "method": "optimal",
+        "method_version": "1.0.0",
+        "policy_kind": "historical-extract",
+        "policy_sha256": "2aeedb02451290541bdeba9fbb6acaa1b06440d67e2642b3fc28c631c0470b08",
+        "policy_version": "ay-2022-23",
+        "programme": "cse-bs",
+        "receiver": "uc-irvine",
+        "recognized_rules": 2,
+        "recognized_units": 1600,
+        "rules": [
+          {
+            "allocation_blockers": [],
+            "evidence": "ASSIST Irvine p. 1: both Glendale programming courses form one equivalence. C is a lab threshold.",
+            "group": "computing",
+            "id": "ics-31-33",
+            "label": "I&C SCI 31 + 32 + 33",
+            "options": [
+              {
+                "clauses": [
+                  {
+                    "attempt": {
+                      "completed_on": "2023-05-24",
+                      "course": "CS/IS 135",
+                      "grade": "B",
+                      "id": "a-01"
+                    },
+                    "course": "CS/IS 135",
+                    "min_grade": "C",
+                    "state": "eligible"
+                  },
+                  {
+                    "attempt": {
+                      "completed_on": "2023-05-24",
+                      "course": "CS/IS 137",
+                      "grade": "C",
+                      "id": "a-02"
+                    },
+                    "course": "CS/IS 137",
+                    "min_grade": "C",
+                    "state": "eligible"
+                  }
+                ],
+                "eligible": true,
+                "id": "route-1"
+              }
+            ],
+            "potential_units": 1200,
+            "selected_option": "route-1",
+            "status": "recognized"
+          },
+          {
+            "allocation_blockers": [],
+            "evidence": "ASSIST Irvine p. 2: the two source Data Structures courses are jointly required. C is a lab threshold.",
+            "group": "computing",
+            "id": "ics-46",
+            "label": "I&C SCI 46 · Data Structures",
+            "options": [
+              {
+                "clauses": [
+                  {
+                    "attempt": {
+                      "completed_on": "2023-05-24",
+                      "course": "CS/IS 211",
+                      "grade": "C",
+                      "id": "a-05"
+                    },
+                    "course": "CS/IS 211",
+                    "min_grade": "C",
+                    "state": "eligible"
+                  },
+                  {
+                    "attempt": null,
+                    "course": "CS/IS 212",
+                    "min_grade": "C",
+                    "state": "no_completed_attempt"
+                  }
+                ],
+                "eligible": false,
+                "id": "route-1"
+              }
+            ],
+            "potential_units": 400,
+            "selected_option": null,
+            "status": "requirements_unmet"
+          },
+          {
+            "allocation_blockers": [],
+            "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+            "group": "mathematics",
+            "id": "math-2a",
+            "label": "MATH 2A · Calculus I",
+            "options": [
+              {
+                "clauses": [
+                  {
+                    "attempt": null,
+                    "course": "MATH 103E",
+                    "min_grade": "B",
+                    "state": "no_completed_attempt"
+                  }
+                ],
+                "eligible": false,
+                "id": "route-1"
+              },
+              {
+                "clauses": [
+                  {
+                    "attempt": {
+                      "completed_on": "2023-05-24",
+                      "course": "MATH 103EH",
+                      "grade": "B",
+                      "id": "a-03"
+                    },
+                    "course": "MATH 103EH",
+                    "min_grade": "B",
+                    "state": "eligible"
+                  }
+                ],
+                "eligible": true,
+                "id": "route-2"
+              }
+            ],
+            "potential_units": 400,
+            "selected_option": "route-2",
+            "status": "recognized"
+          },
+          {
+            "allocation_blockers": [],
+            "evidence": "ASSIST Irvine p. 1: regular and honors calculus are alternatives. Uses the B preparation threshold.",
+            "group": "mathematics",
+            "id": "math-2b",
+            "label": "MATH 2B · Calculus II",
+            "options": [
+              {
+                "clauses": [
+                  {
+                    "attempt": {
+                      "completed_on": "2023-05-24",
+                      "course": "MATH 104E",
+                      "grade": "C",
+                      "id": "a-04"
+                    },
+                    "course": "MATH 104E",
+                    "min_grade": "B",
+                    "state": "grade_below_minimum"
+                  }
+                ],
+                "eligible": false,
+                "id": "route-1"
+              },
+              {
+                "clauses": [
+                  {
+                    "attempt": null,
+                    "course": "MATH 104EH",
+                    "min_grade": "B",
+                    "state": "no_completed_attempt"
+                  }
+                ],
+                "eligible": false,
+                "id": "route-2"
+              }
+            ],
+            "potential_units": 400,
+            "selected_option": null,
+            "status": "requirements_unmet"
+          },
+          {
+            "allocation_blockers": [],
+            "evidence": "ASSIST Irvine pp. 1–2: the two-course source physics sequence maps to the linked target courses and labs.",
+            "group": "physics",
+            "id": "physics-series",
+            "label": "PHYSICS 7C + 7LC + 7D + 7LD",
+            "options": [
+              {
+                "clauses": [
+                  {
+                    "attempt": {
+                      "completed_on": "2023-05-24",
+                      "course": "PHY 101",
+                      "grade": "B",
+                      "id": "a-06"
+                    },
+                    "course": "PHY 101",
+                    "min_grade": "B",
+                    "state": "eligible"
+                  },
+                  {
+                    "attempt": null,
+                    "course": "PHY 102",
+                    "min_grade": "B",
+                    "state": "no_completed_attempt"
+                  }
+                ],
+                "eligible": false,
+                "id": "route-1"
+              },
+              {
+                "clauses": [
+                  {
+                    "attempt": null,
+                    "course": "PHY 101H",
+                    "min_grade": "B",
+                    "state": "no_completed_attempt"
+                  },
+                  {
+                    "attempt": null,
+                    "course": "PHY 102",
+                    "min_grade": "B",
+                    "state": "no_completed_attempt"
+                  }
+                ],
+                "eligible": false,
+                "id": "route-2"
+              }
+            ],
+            "potential_units": 1000,
+            "selected_option": null,
+            "status": "requirements_unmet"
+          }
+        ],
+        "schema": 1,
+        "unit": "quarter units"
+      },
+      "network": "dda5fca4667144279294076e8e45a54c",
+      "salt": "54aecf4fa4cc131579be4587b922e54ee625705d082231e3b148cfe3159cacff",
+      "schema": 1,
+      "transcript_commitment": "d6b499ff71b2256022cdfcfd588228209339f49340b8885b176a1c8a4f6c4464"
+    },
+    "signature": "db5b23c06896294f4a6fef06f8c4069a464f1a18e7f27be9add9bbf0e64b0174951df5ddb679f9ca0e88d586321c112ab987d10c3c4312e7ba9ac03f2c8bc90a"
+  },
+  "transcript": {
+    "body": {
+      "network": "dda5fca4667144279294076e8e45a54c",
+      "salt": "c33b44c09019bd32b8c0d4d98f91c79f5c7052b783a0ca6582e320d11c0c1a6f",
+      "transcript": {
+        "attempts": [
+          {
+            "completed_on": "2023-05-24",
+            "course": "CS/IS 135",
+            "grade": "B",
+            "id": "a-01"
+          },
+          {
+            "completed_on": "2023-05-24",
+            "course": "CS/IS 137",
+            "grade": "C",
+            "id": "a-02"
+          },
+          {
+            "completed_on": "2023-05-24",
+            "course": "MATH 103EH",
+            "grade": "B",
+            "id": "a-03"
+          },
+          {
+            "completed_on": "2023-05-24",
+            "course": "MATH 104E",
+            "grade": "C",
+            "id": "a-04"
+          },
+          {
+            "completed_on": "2023-05-24",
+            "course": "CS/IS 211",
+            "grade": "C",
+            "id": "a-05"
+          },
+          {
+            "completed_on": "2023-05-24",
+            "course": "PHY 101",
+            "grade": "B",
+            "id": "a-06"
+          }
+        ],
+        "holder": "programming-calculus",
+        "issuer": "glendale-cc",
+        "schema": 1
+      }
+    },
+    "signature": "d83e6f2452d0142606b9d7d4185ca926ad4ab14a487a3c7545542523f615b36d9cdd430caf482da4a6e8007231a64b465c7251c12ecccff7440816fa1f50de07"
+  }
+}

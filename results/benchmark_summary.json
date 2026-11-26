@@ -1,0 +1,78 @@
+{
+  "software_version": "1.22.0",
+  "fixture_sha256": "66c56cce89df170571e9b32378483e11974740a0f26757846e004c02e08653b2",
+  "amendment_fixture_sha256": "5966bea853543dad3040f39205de0360366ae40d06b181291f09bfaa1ff6c59c",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "cryptography": "50.0.0",
+    "sqlite": "3.53.1",
+    "os": "Linux",
+    "machine": "x86_64",
+    "cpu": "AMD EPYC 7763 64-Core Processor"
+  },
+  "historical_grid": {
+    "synthetic_transcripts": 512,
+    "policy_decisions": 1024,
+    "exact_matches": 1024
+  },
+  "temporal_grid": {
+    "synthetic_transcripts": 75,
+    "assessment_dates": 4,
+    "knowledge_views": 2,
+    "policy_decisions": 600,
+    "exact_matches": 600
+  },
+  "allocation": {
+    "instances": 64,
+    "optimal_matches": 64,
+    "greedy_matches": 36,
+    "greedy_lost_units_centi": 3000
+  },
+  "replay": {
+    "exact_matches": 60,
+    "receipts": 60
+  },
+  "ledger_latency": {
+    "central": {
+      "commits": 30,
+      "record_ms": {
+        "p50": 15.116,
+        "p95": 28.795
+      },
+      "verify_ms": {
+        "p50": 12.696,
+        "p95": 25.52
+      }
+    },
+    "consortium": {
+      "commits": 30,
+      "record_ms": {
+        "p50": 32.039,
+        "p95": 46.136
+      },
+      "verify_ms": {
+        "p50": 37.816,
+        "p95": 73.258
+      }
+    }
+  },
+  "scenarios": {
+    "central_receipt_rejected": true,
+    "central_policy_rejected": true,
+    "central_transcript_rejected": true,
+    "central_quorum_rejected": true,
+    "central_wrong_trust_rejected": true,
+    "central_historical_replay_after_revision": true,
+    "consortium_receipt_rejected": true,
+    "consortium_policy_rejected": true,
+    "consortium_transcript_rejected": true,
+    "consortium_quorum_rejected": true,
+    "consortium_wrong_trust_rejected": true,
+    "consortium_historical_replay_after_revision": true,
+    "consortium_one_unavailable_commits": true,
+    "consortium_two_unavailable_stops": true,
+    "consortium_pending_recovery_is_idempotent": true
+  }
+}

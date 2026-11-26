@@ -1,5 +1,5 @@
 import copy
-from contextlib import redirect_stdout
+from contextlib import closing, redirect_stdout
 from gzip import compress
 from io import StringIO
 from pathlib import Path
@@ -64,12 +64,12 @@ class LongHistoryTests(unittest.TestCase):
 
     def test_upgrade_populates_index_without_rewriting_ledger_or_fingerprint(self):
         before = self.lab.ledger.prefix()
-        with sqlite3.connect(self.lab.ledger.path) as conn:
+        with closing(sqlite3.connect(self.lab.ledger.path)) as conn, conn:
             conn.execute("DROP TABLE receipt_index")
         reopened = Lab.open(self.lab.ledger.directory)
         self.assertEqual(reopened.ledger.prefix(), before)
         self.assertEqual(reopened.ledger.fingerprint, self.trust)
-        with sqlite3.connect(reopened.ledger.path) as conn:
+        with closing(sqlite3.connect(reopened.ledger.path)) as conn, conn:
             self.assertEqual(conn.execute("SELECT height FROM receipt_index WHERE commitment=?", (self.earlier,)).fetchone(), (4,))
 
     def test_pending_receipt_adds_index_only_when_committed(self):
@@ -78,14 +78,14 @@ class LongHistoryTests(unittest.TestCase):
         signed = lab.sign_transcript(CASE)
         with self.assertRaisesRegex(LabError, "quorum"):
             lab.record(signed, *TARGET, available=("peer-a", "peer-b"))
-        with sqlite3.connect(lab.ledger.path) as conn:
+        with closing(sqlite3.connect(lab.ledger.path)) as conn, conn:
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM receipt_index").fetchone(), (0,))
         lab.ledger.sync()
-        with sqlite3.connect(lab.ledger.path) as conn:
+        with closing(sqlite3.connect(lab.ledger.path)) as conn, conn:
             self.assertEqual(conn.execute("SELECT height FROM receipt_index").fetchall(), [(4,)])
 
     def test_incorrect_index_hint_uses_only_a_valid_receipt_event(self):
-        with sqlite3.connect(self.lab.ledger.path) as conn:
+        with closing(sqlite3.connect(self.lab.ledger.path)) as conn, conn:
             conn.execute("UPDATE receipt_index SET height=1 WHERE commitment=?", (self.earlier,))
         proof = self.lab.bundle(self.earlier)
         self.assertEqual(len(proof["chain"]), 4)
@@ -93,14 +93,14 @@ class LongHistoryTests(unittest.TestCase):
 
     def test_old_replica_without_an_index_can_still_replay(self):
         peer = self.lab.ledger.directory / "authority.sqlite3"
-        with sqlite3.connect(peer) as conn:
+        with closing(sqlite3.connect(peer)) as conn, conn:
             conn.execute("DROP TABLE receipt_index")
         replay = self.lab.replay_from_replica(self.earlier)
         self.assertEqual(replay["height"], 4)
         self.assertEqual(replay["decision"]["recognized_units"], 1600)
 
     def damage_votes(self, path, height):
-        with sqlite3.connect(path) as conn:
+        with closing(sqlite3.connect(path)) as conn, conn:
             document = loads(conn.execute("SELECT document FROM blocks WHERE height=?", (height,)).fetchone()[0])
             document["votes"]["authority"] = "0" * 128
             conn.execute("UPDATE blocks SET document=? WHERE height=?", (canonical(document), height))

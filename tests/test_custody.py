@@ -4,6 +4,7 @@ import sqlite3
 import tempfile
 import unittest
 from concurrent.futures import ThreadPoolExecutor
+from contextlib import closing
 from pathlib import Path
 
 from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
@@ -72,7 +73,7 @@ class ManagedCustodyTests(unittest.TestCase):
         return verify_review(self.lab.bundle(commitment), self.trust)
 
     def test_bootstrap_never_stores_owner_secrets_and_is_repeatable(self):
-        with sqlite3.connect(self.ledger.path) as conn:
+        with closing(sqlite3.connect(self.ledger.path)) as conn, conn:
             self.assertEqual(conn.execute("SELECT keys FROM settings").fetchone()[0],
                              canonical({"actors": {}, "validators": {}}))
         reopened = custody.initialize(self.ledger.directory, self.enrollments)

@@ -1,0 +1,15 @@
+{
+  "base_height": 4,
+  "verified_new_blocks": 2,
+  "archive_sha256": "5e4fddfbc7a062b11bc34ba1cc821599b1a0879e5fdf9c6aef41f39a24a29343",
+  "checkpoint_sha256": "e2aa697d50100236391f0a93758aecb476573f8e0430975735e50f3af82757e0",
+  "checkpoint": {
+    "schema": 1,
+    "profile": "educreditlab-receipt-checkpoint-v1",
+    "manifest_sha256": "0e935b182834337735b793cbb04cb17f2cf747533006dd15d4c2a9f094d1780d",
+    "height": 6,
+    "head_sha256": "3286c2a98929f52e6aa1fbd73db99b1e4af78fca216509a9a60468c16f358b91",
+    "leaf_count": 4,
+    "root_sha256": "dfbe4f7d6a80ab392adcbf23c6f9b68f7c7ca96ededa493173c817249f0657b3"
+  }
+}

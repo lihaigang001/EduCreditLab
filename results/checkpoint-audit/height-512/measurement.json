@@ -1,0 +1,75 @@
+{
+  "software_version": "1.5.0",
+  "python": "3.12.14",
+  "machine": "x86_64",
+  "receipt_height": 512,
+  "receipt_sha256": "61b595c79c66abb9533216232b771363f281b8e7f2bd07bbc7345a5b9a3064dc",
+  "manifest_sha256": "ba94c20fc32ff2595d8e307d88f1f286ad1eef1cf5fc618b128158803fdbbe5b",
+  "checkpoint_sha256": "415c2d96efa7589a0ccf47e8da208443a654d9078876b5bb6aa673b48bc38e03",
+  "checkpoint": {
+    "schema": 1,
+    "profile": "educreditlab-receipt-checkpoint-v1",
+    "manifest_sha256": "ba94c20fc32ff2595d8e307d88f1f286ad1eef1cf5fc618b128158803fdbbe5b",
+    "height": 512,
+    "head_sha256": "492a38079272cd26c4a930977d6e2aa2b2f783caa67e7e3b92424f0139ff7fed",
+    "leaf_count": 511,
+    "root_sha256": "54e159eeff341301bcd8cfb96faadff3e1f7887b014dc9a10da50a2da0538650"
+  },
+  "full_gzip_bytes": 333368,
+  "compact_gzip_bytes": 3453,
+  "compact_anchor_gzip_bytes": 1322,
+  "original_full_verification": {
+    "samples_ms": [
+      529.5286,
+      556.17948,
+      445.01461
+    ],
+    "median_ms": 529.5286
+  },
+  "checkpoint_audit_once": {
+    "samples_ms": [
+      440.36951
+    ],
+    "median_ms": 440.36951
+  },
+  "compact_full_verification": {
+    "samples_ms": [
+      3.1306,
+      3.08077,
+      3.01156,
+      3.02388,
+      3.02311,
+      3.04543,
+      3.0521,
+      3.00434,
+      3.02916,
+      3.02227,
+      3.02951,
+      3.05155,
+      3.04465,
+      3.0209,
+      3.05733,
+      3.01445,
+      3.05379,
+      3.03219,
+      3.2668,
+      3.34552,
+      3.01048,
+      3.06832,
+      3.04731,
+      3.3301,
+      3.19706,
+      3.0429,
+      3.03726,
+      3.19459,
+      3.05066,
+      3.01656
+    ],
+    "median_ms": 3.04504
+  },
+  "receipt_path_nodes": 9,
+  "scope_path_nodes": 9,
+  "scope_policy_count": 2,
+  "recognized_units_centi": 1600,
+  "same_verification_result": true
+}

@@ -1,0 +1,15 @@
+{
+  "checkpoint_height": 6,
+  "results": [
+    {
+      "height": 4,
+      "recognized_units_centi": 1600,
+      "same_as_full_history": true
+    },
+    {
+      "height": 6,
+      "recognized_units_centi": 400,
+      "same_as_full_history": true
+    }
+  ]
+}

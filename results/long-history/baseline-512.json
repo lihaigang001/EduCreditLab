@@ -1,0 +1,62 @@
+{
+  "version": "1.3.0",
+  "fixture": {
+    "height": 512,
+    "early_receipt_sha256": "6a30b53269689d0f672cea9861c3d3421f1140c156b1a6eb8ddde9e78df6031f",
+    "latest_receipt_sha256": "61b595c79c66abb9533216232b771363f281b8e7f2bd07bbc7345a5b9a3064dc",
+    "manifest_sha256": "ba94c20fc32ff2595d8e307d88f1f286ad1eef1cf5fc618b128158803fdbbe5b",
+    "head_sha256": "492a38079272cd26c4a930977d6e2aa2b2f783caa67e7e3b92424f0139ff7fed",
+    "synthetic": true
+  },
+  "samples": {
+    "initial_history": {
+      "ms": [
+        711.9193
+      ],
+      "median_ms": 711.9193
+    },
+    "repeat_full_history": {
+      "ms": [
+        242.3553,
+        219.0262,
+        238.4842
+      ],
+      "median_ms": 238.4842
+    },
+    "early_full_export": {
+      "ms": [
+        59.2202,
+        42.6001,
+        42.2463
+      ],
+      "median_ms": 42.6001
+    },
+    "latest_raw_download": {
+      "ms": [
+        506.1008
+      ],
+      "median_ms": 506.1008
+    },
+    "raw_browser_endpoint": {
+      "ms": [
+        517.2039
+      ],
+      "median_ms": 517.2039
+    },
+    "offline_json_full_verify": {
+      "ms": [
+        439.9255
+      ],
+      "median_ms": 439.9255
+    }
+  },
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "host": "x86_64",
+  "scope": "local four-validator consortium",
+  "history_bytes": 292156,
+  "history_returned_blocks": 512,
+  "json_proof_bytes": 897350,
+  "raw_verify_http_status": 200,
+  "replayed_units_centi": 1600
+}

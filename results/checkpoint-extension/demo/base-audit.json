@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "c41c2ed8f62ecd71bb8bc7968edf941f573d8639faaef3a8ef2681b7e9e1a784",
+  "checkpoint_sha256": "7792acc6e5f51a2db3c3d9b1a92722a7f32d4b602cbfda8385dc09d8afc89ffd",
+  "checkpoint": {
+    "schema": 1,
+    "profile": "educreditlab-receipt-checkpoint-v1",
+    "manifest_sha256": "0e935b182834337735b793cbb04cb17f2cf747533006dd15d4c2a9f094d1780d",
+    "height": 4,
+    "head_sha256": "e5b3efa76fbfd5a3cb28b71df4bf3621caeaeb85ba4c76e1adc4a2dc2db9edb3",
+    "leaf_count": 3,
+    "root_sha256": "db0a67472e44def48c956228e41a8e1ee6b4e52d96c43f8bbbf026de5bf8c95e"
+  }
+}

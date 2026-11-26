@@ -1,0 +1,55 @@
+{
+  "software_version": "1.7.0",
+  "synthetic": true,
+  "manifest_sha256": "567bd7212fa34b9e25531e8e1467db8c9e1c98b1bfaa1ad964c802a2e671c9d6",
+  "assessment_date": "2023-06-15",
+  "two_votes_kept_proposal_pending": true,
+  "rotations": [
+    {
+      "height": 5,
+      "network": "4c8c29fcd6ab415a829f96b2cc7a4250",
+      "name": "uc-irvine",
+      "role": "actor",
+      "previous_key": "be30a40781055942f8de162cc53dde1baf695869bd5f38c3592893ef88973350",
+      "replacement_key": "35b8bba2fab1200875d04438d196e801958fec1510909486d4cd18d06bdb01b1",
+      "reason": "Synthetic scheduled renewal"
+    },
+    {
+      "height": 6,
+      "network": "4c8c29fcd6ab415a829f96b2cc7a4250",
+      "name": "peer-b",
+      "role": "validator",
+      "previous_key": "89e9c6fd25295e56e064a4c98d54b81d291c5090653f06cdee9d900f0fea1494",
+      "replacement_key": "602a5b807facee1bca7fb0163b158ab57076295a74a6214dc01bc8249a3bdf4a",
+      "reason": "Synthetic scheduled renewal"
+    }
+  ],
+  "receipts": [
+    {
+      "height": 4,
+      "receipt_sha256": "029ac7bcf79e320be2cc8ecb32cb7400ccad4f74297be3bb0fcff692dec7c567",
+      "recognized_units": 1600,
+      "unit": "quarter units",
+      "validators": [
+        "peer-a",
+        "peer-b",
+        "peer-c"
+      ],
+      "knowledge_height": 3,
+      "replayed": true
+    },
+    {
+      "height": 7,
+      "receipt_sha256": "148edf9b0e0795556ea12478f77f186cea89506ce5a483a431c4394177568479",
+      "recognized_units": 1600,
+      "unit": "quarter units",
+      "validators": [
+        "peer-b",
+        "peer-c",
+        "peer-d"
+      ],
+      "knowledge_height": 3,
+      "replayed": true
+    }
+  ]
+}

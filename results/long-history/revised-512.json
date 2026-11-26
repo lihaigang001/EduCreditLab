@@ -1,0 +1,82 @@
+{
+  "version": "1.4.0",
+  "fixture": {
+    "height": 512,
+    "early_receipt_sha256": "6a30b53269689d0f672cea9861c3d3421f1140c156b1a6eb8ddde9e78df6031f",
+    "latest_receipt_sha256": "61b595c79c66abb9533216232b771363f281b8e7f2bd07bbc7345a5b9a3064dc",
+    "manifest_sha256": "ba94c20fc32ff2595d8e307d88f1f286ad1eef1cf5fc618b128158803fdbbe5b",
+    "head_sha256": "492a38079272cd26c4a930977d6e2aa2b2f783caa67e7e3b92424f0139ff7fed",
+    "synthetic": true
+  },
+  "samples": {
+    "initial_history": {
+      "ms": [
+        570.1206
+      ],
+      "median_ms": 570.1206
+    },
+    "older_page": {
+      "ms": [
+        1.8479,
+        1.0373,
+        0.9274
+      ],
+      "median_ms": 1.0373
+    },
+    "early_full_export": {
+      "ms": [
+        7.8758,
+        5.4486,
+        5.1255
+      ],
+      "median_ms": 5.4486
+    },
+    "latest_raw_download": {
+      "ms": [
+        99.5149
+      ],
+      "median_ms": 99.5149
+    },
+    "raw_browser_endpoint": {
+      "ms": [
+        440.0666
+      ],
+      "median_ms": 440.0666
+    },
+    "offline_json_full_verify": {
+      "ms": [
+        473.5071
+      ],
+      "median_ms": 473.5071
+    },
+    "latest_gzip_download": {
+      "ms": [
+        89.4954
+      ],
+      "median_ms": 89.4954
+    },
+    "gzip_browser_endpoint": {
+      "ms": [
+        516.2115
+      ],
+      "median_ms": 516.2115
+    },
+    "offline_gzip_full_verify": {
+      "ms": [
+        504.8998
+      ],
+      "median_ms": 504.8998
+    }
+  },
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "host": "x86_64",
+  "scope": "local four-validator consortium",
+  "history_bytes": 23474,
+  "history_returned_blocks": 40,
+  "json_proof_bytes": 897350,
+  "raw_verify_http_status": 200,
+  "gzip_proof_bytes": 333368,
+  "gzip_verify_http_status": 200,
+  "replayed_units_centi": 1600
+}

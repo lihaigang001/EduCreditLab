@@ -1,0 +1,81 @@
+{
+  "software_version": "1.6.0",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "target_height": 10000,
+  "full_archive_gzip_bytes": 6445360,
+  "full_audit": {
+    "samples_ms": [
+      9041.16576,
+      8808.69152,
+      8770.0657
+    ],
+    "median_ms": 8808.69152
+  },
+  "checkpoint": {
+    "schema": 1,
+    "profile": "educreditlab-receipt-checkpoint-v1",
+    "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+    "height": 10000,
+    "head_sha256": "4372141935dc5d2a23025b1a33aa9476e56ad0568fa26107659512dc04418755",
+    "leaf_count": 9999,
+    "root_sha256": "cba7037400be97599a57e2280b21efc2158fc0f47253280590d2ba8f9454cfe1"
+  },
+  "checkpoint_sha256": "94dc888f7833f6cd68b0439ecbf24cac80e6e48232e24dd06209bcdd0b6e29ba",
+  "cases": [
+    {
+      "base_height": 9000,
+      "new_blocks": 1000,
+      "base_archive_gzip_bytes": 5800793,
+      "delta_gzip_bytes": 645446,
+      "extension": {
+        "samples_ms": [
+          1346.47799,
+          1433.09356,
+          1347.26418,
+          1386.78406,
+          1358.32748
+        ],
+        "median_ms": 1358.32748
+      },
+      "checkpoint_match": true
+    },
+    {
+      "base_height": 9900,
+      "new_blocks": 100,
+      "base_archive_gzip_bytes": 6380883,
+      "delta_gzip_bytes": 65325,
+      "extension": {
+        "samples_ms": [
+          588.06363,
+          716.3849,
+          606.88195,
+          456.55383,
+          668.78391
+        ],
+        "median_ms": 606.88195
+      },
+      "checkpoint_match": true
+    },
+    {
+      "base_height": 9990,
+      "new_blocks": 10,
+      "base_archive_gzip_bytes": 6438920,
+      "delta_gzip_bytes": 7009,
+      "extension": {
+        "samples_ms": [
+          645.68574,
+          651.44976,
+          522.69013,
+          524.08722,
+          571.07453
+        ],
+        "median_ms": 571.07453
+      },
+      "checkpoint_match": true
+    }
+  ],
+  "receipt_sha256": "7a48368364b3ad3f9868be797ef508ed29d150f61051f6d515e3f83e28e92504",
+  "recognized_units_centi": 1600,
+  "same_replay_result": true
+}

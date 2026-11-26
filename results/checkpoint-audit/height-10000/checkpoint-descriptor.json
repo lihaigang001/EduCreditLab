@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "profile": "educreditlab-receipt-checkpoint-v1",
+  "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+  "height": 10000,
+  "head_sha256": "4372141935dc5d2a23025b1a33aa9476e56ad0568fa26107659512dc04418755",
+  "leaf_count": 9999,
+  "root_sha256": "cba7037400be97599a57e2280b21efc2158fc0f47253280590d2ba8f9454cfe1"
+}

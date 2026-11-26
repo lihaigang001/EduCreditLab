@@ -11,7 +11,7 @@ Use Python 3.11 or later. Create a virtual environment, activate it, and install
     # macOS/Linux: source .venv/bin/activate
     python -m pip install .
 
-On Windows, run **Start_EduCreditLab.cmd** to create the environment and start the Chinese workbench. The initial install needs access to Python package wheels. The experiments and workbench subsequently run offline.
+On Windows, run **Start_EduCreditLab.cmd** to create the environment and start the Chinese workbench. The launcher installs dependencies when needed and reinstalls the bundled version 1.28.0 application wheel each time it starts, so the packaged files replace any stale copy in the virtual environment. The initial install needs access to Python package wheels. The experiments and workbench subsequently run offline.
 
 For an upgrade, stop the running workbench and retain a copy of its workspace directory before installing the new wheel. The launcher installs the bundled version 1.28.0 when its environment uses a different version. Opening the coordinator adds a receipt index to an older workspace. For a custom workspace, start the command below with your workspace path.
 

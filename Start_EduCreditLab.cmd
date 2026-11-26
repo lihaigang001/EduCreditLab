@@ -20,6 +20,9 @@ if errorlevel 1 (
 if errorlevel 1 (
     "%EDUCREDIT_PY%" -m pip install dist\educreditlab-1.28.0-py3-none-any.whl
     if errorlevel 1 goto failed
+) else (
+    "%EDUCREDIT_PY%" -m pip install --no-deps --force-reinstall dist\educreditlab-1.28.0-py3-none-any.whl
+    if errorlevel 1 goto failed
 )
 echo Open http://127.0.0.1:8765 in your browser.
 "%EDUCREDIT_PY%" -m educreditlab --workspace workbench serve --seed

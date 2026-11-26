@@ -1,0 +1,229 @@
+{
+  "software_version": "1.11.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "cases": [
+    {
+      "receipt_count": 3,
+      "replay_count": 2,
+      "anchor_count": 1,
+      "checkpoint_height": 7,
+      "review_plan_sha256": "bd109839466889b8f092f805d95e92ae75fa00b9742cc8b0483ff014cdee228a",
+      "proof_sha256": "fa5c127938a318a68a57235a71afb69f7f310426e3f13fa30e96d35faead93f2",
+      "result_sha256": "140b40542a9c207cf234644033c4d1275861c284f41f3baf2300bdfe933e29d2",
+      "verified_revisions": 3,
+      "verified_changes": 2,
+      "thresholds": [
+        3,
+        3,
+        2
+      ],
+      "roster_sizes": [
+        4,
+        4,
+        4
+      ],
+      "change_signer_counts": [
+        4,
+        3
+      ],
+      "history_gzip_bytes": 1269,
+      "current_quorum_gzip_bytes": 868,
+      "history_only": {
+        "samples_ms": [
+          1.46526,
+          1.25207,
+          1.21265,
+          1.18082,
+          1.15926,
+          1.17118,
+          1.18119,
+          1.1919,
+          1.16801,
+          1.18233,
+          1.16316,
+          1.20473,
+          1.2134,
+          1.17392,
+          1.49968,
+          1.4929,
+          1.27065,
+          1.31829,
+          1.34592,
+          1.57187,
+          1.24038
+        ],
+        "median_ms": 1.21265
+      },
+      "current_signatures": {
+        "samples_ms": [
+          2.02779,
+          1.67685,
+          1.90275,
+          1.82126,
+          1.9881,
+          1.70125,
+          1.83377,
+          1.68261,
+          1.70052,
+          2.3055,
+          2.1657,
+          1.83901,
+          1.81026,
+          1.61493,
+          1.95874,
+          1.91994,
+          1.67396,
+          1.78737,
+          1.74823,
+          1.79354,
+          1.64944
+        ],
+        "median_ms": 1.81026
+      },
+      "with_evidence": {
+        "samples_ms": [
+          11.20189,
+          10.79271,
+          9.91412,
+          10.00502,
+          12.11727,
+          12.28221,
+          9.92682,
+          10.75318,
+          11.72844,
+          11.34149,
+          11.05585,
+          10.22633,
+          9.65843,
+          10.24568,
+          16.25789,
+          23.93483,
+          18.69415,
+          10.50851,
+          10.92436,
+          19.35946,
+          21.51609
+        ],
+        "median_ms": 11.05585
+      },
+      "current_policy_sha256": "04f4feef5a0023f79b153d0a60148d538c19f80cbc1f9978f5841234f28b1446",
+      "independent_result_match": true,
+      "historical_match": true,
+      "old_record_rejected_under_current_rule": true,
+      "truncated_history_rejected": true,
+      "both_thresholds_required": true
+    },
+    {
+      "receipt_count": 128,
+      "replay_count": 16,
+      "anchor_count": 112,
+      "checkpoint_height": 10000,
+      "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+      "proof_sha256": "82273a99c755a970e3f90d38be632e7f1d0281b4fbefa2a7ecea276f4443da59",
+      "result_sha256": "7cf1078c06648c1b587728ed051e2f4ec68777b817f5a9ba7cbf88e585a960c6",
+      "verified_revisions": 3,
+      "verified_changes": 2,
+      "thresholds": [
+        3,
+        3,
+        2
+      ],
+      "roster_sizes": [
+        4,
+        4,
+        4
+      ],
+      "change_signer_counts": [
+        4,
+        3
+      ],
+      "history_gzip_bytes": 1271,
+      "current_quorum_gzip_bytes": 871,
+      "history_only": {
+        "samples_ms": [
+          2.62115,
+          1.54624,
+          1.66248,
+          1.44613,
+          1.43281,
+          2.70844,
+          1.53703,
+          1.82396,
+          1.64277,
+          1.46149,
+          2.60728,
+          3.09621,
+          1.75563,
+          1.62896,
+          1.61844,
+          2.0429,
+          1.4789,
+          1.40141,
+          1.86814,
+          18.63269,
+          2.75381
+        ],
+        "median_ms": 1.66248
+      },
+      "current_signatures": {
+        "samples_ms": [
+          2.57063,
+          1.89368,
+          2.03765,
+          2.1719,
+          2.24459,
+          2.11335,
+          1.99997,
+          2.22555,
+          1.81232,
+          2.20971,
+          3.47086,
+          3.88678,
+          3.84953,
+          3.77722,
+          4.31757,
+          1.97942,
+          2.1179,
+          2.08811,
+          2.03356,
+          1.85503,
+          1.68138
+        ],
+        "median_ms": 2.1179
+      },
+      "with_evidence": {
+        "samples_ms": [
+          110.37184,
+          89.92963,
+          90.75435,
+          80.60002,
+          82.56807,
+          81.96006,
+          88.13186,
+          83.0482,
+          83.04689,
+          79.59117,
+          84.19353,
+          84.14588,
+          96.19719,
+          106.51775,
+          125.86038,
+          98.41745,
+          105.64467,
+          83.40987,
+          76.12253,
+          91.92014,
+          84.65817
+        ],
+        "median_ms": 84.65817
+      },
+      "current_policy_sha256": "984e97127015d911e3837c8b742bc49eb879cbf3aebc113be3fe8bcf1ec8c453",
+      "independent_result_match": true,
+      "historical_match": true,
+      "old_record_rejected_under_current_rule": true,
+      "truncated_history_rejected": true,
+      "both_thresholds_required": true
+    }
+  ]
+}

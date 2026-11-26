@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+  "checkpoint_sha256": "94dc888f7833f6cd68b0439ecbf24cac80e6e48232e24dd06209bcdd0b6e29ba",
+  "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+  "proof_sha256": "82273a99c755a970e3f90d38be632e7f1d0281b4fbefa2a7ecea276f4443da59",
+  "result_sha256": "7cf1078c06648c1b587728ed051e2f4ec68777b817f5a9ba7cbf88e585a960c6",
+  "initial_policy_sha256": "342bfffa7985eebedd7aff1e00e7aacfc22fcd93918c643605a95da1b31930b7",
+  "latest_revision_sha256": "f5affd040405a34337414926a72315ad3912af1bfc69755927f80acda55cfefa"
+}

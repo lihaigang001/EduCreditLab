@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "kind": "educreditlab-review-quorum-policy",
+  "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+  "reviewer_sha256": [
+    "3c4b3974e9a3f24cb60b776bb045b7a844c4f63d9bd42d1a26e6c1a06e96def4",
+    "5e6a5dd9ee5d0f98d1644b3785cdad3d5b19a891279292ccb50ce8a6c93adcb5",
+    "bff195ad97d718b24227084b9c63915d05b4dc72d3fca4aacd33ab56ba29b6f5",
+    "efb87a4be718dc44345536d27a6ff654251e7e62fdedffc65ba729f21e59f04e"
+  ],
+  "threshold": 3
+}

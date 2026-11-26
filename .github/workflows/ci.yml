@@ -1,0 +1,125 @@
+name: EduCreditLab CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.os }} - Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+        python-version:
+          - "3.11"
+          - "3.12"
+          - "3.13"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install EduCreditLab
+        run: python -m pip install .
+
+      - name: Check dependencies
+        run: python -m pip check
+
+      - name: Check CLI
+        run: python -m educreditlab --help
+
+      - name: Compile Python source
+        run: python -m compileall -q src
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+  build:
+    name: Build and validate package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build tools
+        run: python -m pip install --upgrade pip build twine
+
+      - name: Build wheel and source distribution
+        run: python -m build --outdir build-artifacts
+
+      - name: Validate distribution
+        run: python -m twine check build-artifacts/*
+
+      - name: Install built wheel
+        run: python -m pip install build-artifacts/*.whl
+
+      - name: Check installed package
+        run: python -m pip check
+
+      - name: Verify CLI
+        run: educreditlab --help
+
+      - name: Run tests against built package
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify bundled wheel consistency
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          bundled = sorted(Path("dist").glob("*.whl"))
+          built = sorted(Path("build-artifacts").glob("*.whl"))
+
+          assert len(bundled) == 1, "Expected one bundled wheel"
+          assert len(built) == 1, "Expected one newly built wheel"
+          assert bundled[0].name == built[0].name, "Wheel version mismatch"
+
+          def package_files(path):
+              with ZipFile(path) as archive:
+                  return {
+                      name: archive.read(name)
+                      for name in archive.namelist()
+                      if name.startswith("educreditlab/")
+                      and not name.endswith("/")
+                  }
+
+          assert package_files(bundled[0]) == package_files(built[0]), (
+              "Bundled wheel does not match current source code"
+          )
+
+          print("Bundled wheel matches current source code.")
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: EduCreditLab-distribution
+          path: build-artifacts/
+          retention-days: 30

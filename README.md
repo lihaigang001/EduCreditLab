@@ -13,9 +13,9 @@ Use Python 3.11 or later. Create a virtual environment, activate it, and install
     # macOS/Linux: source .venv/bin/activate
     python -m pip install .
 
-On Windows, run **Start_EduCreditLab.cmd** to create the environment and start the Chinese workbench. The launcher installs dependencies when needed and reinstalls the bundled version 1.28.0 application wheel each time it starts, so the packaged files replace any stale copy in the virtual environment. The initial install needs access to Python package wheels. The experiments and workbench subsequently run offline.
+On Windows, run **Start_EduCreditLab.cmd** to create the environment and start the Chinese workbench. The launcher installs dependencies when needed and reinstalls the bundled version 1.28.1 application wheel each time it starts, so the packaged files replace any stale copy in the virtual environment. The initial install needs access to Python package wheels. The experiments and workbench subsequently run offline.
 
-For an upgrade, stop the running workbench and retain a copy of its workspace directory. The launcher refreshes the bundled version 1.28.0 application wheel at startup and reuses the existing workspace. Opening the coordinator adds a receipt index to an older workspace. For a custom workspace, start the command below with your workspace path.
+For an upgrade, stop the running workbench and retain a copy of its workspace directory. The launcher refreshes the bundled version 1.28.1 application wheel at startup and reuses the existing workspace. Opening the coordinator adds a receipt index to an older workspace. For a custom workspace, start the command below with your workspace path.
 
     educreditlab --workspace ./workbench serve
 
@@ -189,6 +189,7 @@ Source code is distributed under the MIT License. Source agreements are identifi
 
 ## Cite this software
 
-The Zenodo concept DOI for this software is [10.5281/zenodo.24564737](https://doi.org/10.5281/zenodo.24564737). For the **v1.28.0** release, use its version-specific DOI: [10.5281/zenodo.24564738](https://doi.org/10.5281/zenodo.24564738).
+The Zenodo concept DOI for this software is [10.5281/zenodo.24564737](https://doi.org/10.5281/zenodo.24564737). For the **v1.28.1** release, use its version-specific DOI: [10.5281/zenodo.24564738](https://doi.org/10.5281/zenodo.24564738).
 
-> lihaigang001. (2026). *EduCreditLab* (v1.28.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24564738
+> lihaigang001. (2026). *EduCreditLab* (v1.28.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24564738
+

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the version-specific Zenodo record."
 title: "EduCreditLab"
-version: "1.28.0"
+version: "1.28.1"
 doi: "10.5281/zenodo.24564738"
 date-released: "2026-11-26"
 url: "https://github.com/lihaigang001/EduCreditLab"
@@ -15,3 +15,4 @@ keywords:
   - "higher education"
   - "academic credit transfer"
   - "auditable software"
+

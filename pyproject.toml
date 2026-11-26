@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "educreditlab"
-version = "1.28.0"
+version = "1.28.1"
 description = "Auditable cross-institutional course articulation and allocation"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -27,4 +27,5 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 educreditlab = ["data/*.json", "web/*"]
+
 

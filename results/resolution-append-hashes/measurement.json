@@ -1,0 +1,652 @@
+{
+  "software_version": "1.27.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "block_count": 4,
+  "trials_per_block": 7,
+  "trials_per_version": 28,
+  "original_review": {
+    "receipt_count": 128,
+    "replay_count": 16,
+    "anchor_count": 112,
+    "checkpoint_height": 10000,
+    "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+    "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+    "checkpoint_sha256": "94dc888f7833f6cd68b0439ecbf24cac80e6e48232e24dd06209bcdd0b6e29ba",
+    "proof_sha256": "82273a99c755a970e3f90d38be632e7f1d0281b4fbefa2a7ecea276f4443da59",
+    "result_sha256": "7cf1078c06648c1b587728ed051e2f4ec68777b817f5a9ba7cbf88e585a960c6"
+  },
+  "cases": [
+    {
+      "stages": 4,
+      "checkpoint_counts": [
+        31,
+        281,
+        531,
+        781,
+        1031
+      ],
+      "baseline": {
+        "software_version": "1.26.0",
+        "python": "3.12.14",
+        "leaf_hash_calls": 4024,
+        "refresh_leaf_hash_calls": 1979,
+        "signature_batches_checked": 4,
+        "input_gzip_bytes": 211810,
+        "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+        "proof_gzip_bytes": 2545,
+        "verified_publications": 8,
+        "matches_full_audit": true,
+        "samples_ms": [
+          284.98144,
+          292.85703,
+          300.30151,
+          306.28418,
+          318.60073,
+          301.06605,
+          308.25538,
+          295.39214,
+          320.33135,
+          315.80453,
+          322.84775,
+          300.48864,
+          317.05854,
+          344.99113,
+          308.96739,
+          303.37034,
+          315.37349,
+          302.79201,
+          297.15789,
+          316.40492,
+          317.50805,
+          363.95553,
+          290.15282,
+          300.8372,
+          301.72464,
+          291.42371,
+          298.96206,
+          296.34807
+        ],
+        "median_ms": 303.08117500000003
+      },
+      "current": {
+        "software_version": "1.27.0",
+        "python": "3.12.14",
+        "leaf_hash_calls": 1057,
+        "refresh_leaf_hash_calls": 12,
+        "signature_batches_checked": 4,
+        "input_gzip_bytes": 211810,
+        "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+        "proof_gzip_bytes": 2545,
+        "verified_publications": 8,
+        "matches_full_audit": true,
+        "samples_ms": [
+          318.66387,
+          294.16256,
+          296.2584,
+          328.01423,
+          289.47233,
+          298.69974,
+          291.19063,
+          309.4979,
+          285.77702,
+          277.27643,
+          268.19266,
+          272.91968,
+          278.34109,
+          295.61162,
+          299.29836,
+          291.12924,
+          269.77828,
+          273.2543,
+          282.93008,
+          287.61432,
+          280.74431,
+          276.17093,
+          282.81523,
+          291.18306,
+          273.44207,
+          303.42542,
+          272.20681,
+          277.70855
+        ],
+        "median_ms": 286.69567
+      },
+      "blocks": [
+        {
+          "order": [
+            "1.26.0",
+            "1.27.0"
+          ],
+          "runs": {
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                284.98144,
+                292.85703,
+                300.30151,
+                306.28418,
+                318.60073,
+                301.06605,
+                308.25538
+              ],
+              "median_ms": 301.06605,
+              "leaf_hash_calls": 4024,
+              "refresh_leaf_hash_calls": 1979,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            },
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                318.66387,
+                294.16256,
+                296.2584,
+                328.01423,
+                289.47233,
+                298.69974,
+                291.19063
+              ],
+              "median_ms": 296.2584,
+              "leaf_hash_calls": 1057,
+              "refresh_leaf_hash_calls": 12,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            }
+          }
+        },
+        {
+          "order": [
+            "1.27.0",
+            "1.26.0"
+          ],
+          "runs": {
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                309.4979,
+                285.77702,
+                277.27643,
+                268.19266,
+                272.91968,
+                278.34109,
+                295.61162
+              ],
+              "median_ms": 278.34109,
+              "leaf_hash_calls": 1057,
+              "refresh_leaf_hash_calls": 12,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            },
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                295.39214,
+                320.33135,
+                315.80453,
+                322.84775,
+                300.48864,
+                317.05854,
+                344.99113
+              ],
+              "median_ms": 317.05854,
+              "leaf_hash_calls": 4024,
+              "refresh_leaf_hash_calls": 1979,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            }
+          }
+        },
+        {
+          "order": [
+            "1.26.0",
+            "1.27.0"
+          ],
+          "runs": {
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                308.96739,
+                303.37034,
+                315.37349,
+                302.79201,
+                297.15789,
+                316.40492,
+                317.50805
+              ],
+              "median_ms": 308.96739,
+              "leaf_hash_calls": 4024,
+              "refresh_leaf_hash_calls": 1979,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            },
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                299.29836,
+                291.12924,
+                269.77828,
+                273.2543,
+                282.93008,
+                287.61432,
+                280.74431
+              ],
+              "median_ms": 282.93008,
+              "leaf_hash_calls": 1057,
+              "refresh_leaf_hash_calls": 12,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            }
+          }
+        },
+        {
+          "order": [
+            "1.27.0",
+            "1.26.0"
+          ],
+          "runs": {
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                276.17093,
+                282.81523,
+                291.18306,
+                273.44207,
+                303.42542,
+                272.20681,
+                277.70855
+              ],
+              "median_ms": 277.70855,
+              "leaf_hash_calls": 1057,
+              "refresh_leaf_hash_calls": 12,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            },
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                363.95553,
+                290.15282,
+                300.8372,
+                301.72464,
+                291.42371,
+                298.96206,
+                296.34807
+              ],
+              "median_ms": 298.96206,
+              "leaf_hash_calls": 4024,
+              "refresh_leaf_hash_calls": 1979,
+              "signature_batches_checked": 4,
+              "input_gzip_bytes": 211810,
+              "proof_gzip_sha256": "0636bc4a1ae333c0cacaa4f2e3f1f345a79e83eb8539abf85303e1c176e874f0",
+              "proof_gzip_bytes": 2545,
+              "verified_publications": 8,
+              "matches_full_audit": true
+            }
+          }
+        }
+      ],
+      "receipt_rechecks": [
+        1,
+        1024
+      ]
+    },
+    {
+      "stages": 16,
+      "checkpoint_counts": [
+        31,
+        93,
+        156,
+        218,
+        281,
+        343,
+        406,
+        468,
+        531,
+        593,
+        656,
+        718,
+        781,
+        843,
+        906,
+        968,
+        1031
+      ],
+      "baseline": {
+        "software_version": "1.26.0",
+        "python": "3.12.14",
+        "leaf_hash_calls": 4968,
+        "refresh_leaf_hash_calls": 2815,
+        "signature_batches_checked": 16,
+        "input_gzip_bytes": 231851,
+        "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+        "proof_gzip_bytes": 5497,
+        "verified_publications": 20,
+        "matches_full_audit": true,
+        "samples_ms": [
+          301.2616,
+          295.45678,
+          343.34722,
+          306.51164,
+          299.3456,
+          301.32551,
+          301.31961,
+          302.51619,
+          300.84429,
+          297.98102,
+          295.55781,
+          289.57332,
+          315.82199,
+          286.55458,
+          272.38234,
+          316.22301,
+          284.75087,
+          285.72907,
+          286.35381,
+          284.30639,
+          286.04455,
+          277.39344,
+          276.94894,
+          275.11473,
+          276.19334,
+          276.82067,
+          308.0324,
+          292.5866
+        ],
+        "median_ms": 294.02169
+      },
+      "current": {
+        "software_version": "1.27.0",
+        "python": "3.12.14",
+        "leaf_hash_calls": 1201,
+        "refresh_leaf_hash_calls": 48,
+        "signature_batches_checked": 16,
+        "input_gzip_bytes": 231851,
+        "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+        "proof_gzip_bytes": 5497,
+        "verified_publications": 20,
+        "matches_full_audit": true,
+        "samples_ms": [
+          283.09884,
+          279.71225,
+          284.31786,
+          279.88352,
+          277.91536,
+          304.33771,
+          276.69485,
+          267.18872,
+          271.37511,
+          318.69675,
+          300.8694,
+          292.8566,
+          295.10486,
+          288.38603,
+          282.5711,
+          274.57053,
+          273.71141,
+          274.73546,
+          280.05007,
+          295.26702,
+          272.82648,
+          281.01743,
+          286.73823,
+          267.87115,
+          276.98208,
+          276.72473,
+          275.24795,
+          274.1169
+        ],
+        "median_ms": 279.79788499999995
+      },
+      "blocks": [
+        {
+          "order": [
+            "1.26.0",
+            "1.27.0"
+          ],
+          "runs": {
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                301.2616,
+                295.45678,
+                343.34722,
+                306.51164,
+                299.3456,
+                301.32551,
+                301.31961
+              ],
+              "median_ms": 301.31961,
+              "leaf_hash_calls": 4968,
+              "refresh_leaf_hash_calls": 2815,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            },
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                283.09884,
+                279.71225,
+                284.31786,
+                279.88352,
+                277.91536,
+                304.33771,
+                276.69485
+              ],
+              "median_ms": 279.88352,
+              "leaf_hash_calls": 1201,
+              "refresh_leaf_hash_calls": 48,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            }
+          }
+        },
+        {
+          "order": [
+            "1.27.0",
+            "1.26.0"
+          ],
+          "runs": {
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                267.18872,
+                271.37511,
+                318.69675,
+                300.8694,
+                292.8566,
+                295.10486,
+                288.38603
+              ],
+              "median_ms": 292.8566,
+              "leaf_hash_calls": 1201,
+              "refresh_leaf_hash_calls": 48,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            },
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                302.51619,
+                300.84429,
+                297.98102,
+                295.55781,
+                289.57332,
+                315.82199,
+                286.55458
+              ],
+              "median_ms": 297.98102,
+              "leaf_hash_calls": 4968,
+              "refresh_leaf_hash_calls": 2815,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            }
+          }
+        },
+        {
+          "order": [
+            "1.26.0",
+            "1.27.0"
+          ],
+          "runs": {
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                272.38234,
+                316.22301,
+                284.75087,
+                285.72907,
+                286.35381,
+                284.30639,
+                286.04455
+              ],
+              "median_ms": 285.72907,
+              "leaf_hash_calls": 4968,
+              "refresh_leaf_hash_calls": 2815,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            },
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                282.5711,
+                274.57053,
+                273.71141,
+                274.73546,
+                280.05007,
+                295.26702,
+                272.82648
+              ],
+              "median_ms": 274.73546,
+              "leaf_hash_calls": 1201,
+              "refresh_leaf_hash_calls": 48,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            }
+          }
+        },
+        {
+          "order": [
+            "1.27.0",
+            "1.26.0"
+          ],
+          "runs": {
+            "1.27.0": {
+              "software_version": "1.27.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                281.01743,
+                286.73823,
+                267.87115,
+                276.98208,
+                276.72473,
+                275.24795,
+                274.1169
+              ],
+              "median_ms": 276.72473,
+              "leaf_hash_calls": 1201,
+              "refresh_leaf_hash_calls": 48,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            },
+            "1.26.0": {
+              "software_version": "1.26.0",
+              "python": "3.12.14",
+              "samples_ms": [
+                277.39344,
+                276.94894,
+                275.11473,
+                276.19334,
+                276.82067,
+                308.0324,
+                292.5866
+              ],
+              "median_ms": 276.94894,
+              "leaf_hash_calls": 4968,
+              "refresh_leaf_hash_calls": 2815,
+              "signature_batches_checked": 16,
+              "input_gzip_bytes": 231851,
+              "proof_gzip_sha256": "f1f52ce3eaa4cd51bb0c4067d27f65e2538c8dd8e763a4d3c5456adc0d102a86",
+              "proof_gzip_bytes": 5497,
+              "verified_publications": 20,
+              "matches_full_audit": true
+            }
+          }
+        }
+      ],
+      "receipt_rechecks": [
+        1,
+        1024
+      ]
+    }
+  ]
+}

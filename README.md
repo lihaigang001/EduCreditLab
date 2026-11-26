@@ -1,5 +1,7 @@
 # EduCreditLab
 
+[![DOI](https://zenodo.org/badge/github/1473015741.svg)](https://doi.org/10.5281/zenodo.24564737)
+
 EduCreditLab computes how courses from one institution satisfy selected requirements at another institution. It explains each match, compares dated policies, and produces a review bundle that another reviewer can verify and replay. The source distribution includes an English command-line interface and a Chinese browser workbench.
 
 ## Install and run
@@ -13,7 +15,7 @@ Use Python 3.11 or later. Create a virtual environment, activate it, and install
 
 On Windows, run **Start_EduCreditLab.cmd** to create the environment and start the Chinese workbench. The launcher installs dependencies when needed and reinstalls the bundled version 1.28.0 application wheel each time it starts, so the packaged files replace any stale copy in the virtual environment. The initial install needs access to Python package wheels. The experiments and workbench subsequently run offline.
 
-For an upgrade, stop the running workbench and retain a copy of its workspace directory before installing the new wheel. The launcher installs the bundled version 1.28.0 when its environment uses a different version. Opening the coordinator adds a receipt index to an older workspace. For a custom workspace, start the command below with your workspace path.
+For an upgrade, stop the running workbench and retain a copy of its workspace directory. The launcher refreshes the bundled version 1.28.0 application wheel at startup and reuses the existing workspace. Opening the coordinator adds a receipt index to an older workspace. For a custom workspace, start the command below with your workspace path.
 
     educreditlab --workspace ./workbench serve
 
@@ -184,3 +186,9 @@ The Irvine and Merced examples encode selected rows of ASSIST's 2022–2023 Comp
 The local research ledger runs on one host with a single coordinator, fixed membership, simulated institutional keys and SQLite validator replicas. The local consortium mode requires three of four Ed25519 votes. The central mode requires one vote and shares the same application and solver. The managed consortium exchanges files with four fixed validators and uses one coordinator. The offline verifier checks the supplied history up to the receipt against an independently trusted fingerprint. Full review bundles contain the transcript and are for authorized reviewers. Keep demonstration workspaces local and use synthetic or appropriately authorized records. The managed implementation covers planned rotation and consensus by a fixed signature quorum. Production deployments require additional operational recovery and institutional data controls.
 
 Source code is distributed under the MIT License. Source agreements are identified in [Data and protocol](docs/data-and-protocol.md).
+
+## Cite this software
+
+The Zenodo concept DOI for this software is [10.5281/zenodo.24564737](https://doi.org/10.5281/zenodo.24564737). For the **v1.28.0** release, use its version-specific DOI: [10.5281/zenodo.24564738](https://doi.org/10.5281/zenodo.24564738).
+
+> lihaigang001. (2026). *EduCreditLab* (v1.28.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24564738

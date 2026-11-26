@@ -1,0 +1,61 @@
+{
+  "initial_authority_sha256": "332b9fb995e80d2ad3278caddcac7a1a772278c90d521557ce6662d3940551f9",
+  "incoming_authority_sha256": "dbb259f05447fc03413b82b338da58efa499d57754456f69225cefcc602c22a5",
+  "base_publication_count": 31,
+  "base_publication_sha256": "1cb74ce1fc1532f799e617d54c5cad15427af29242720045ed199403eb614736",
+  "latest_publication_sha256": "3235879fa9cf97317ed39737aef5e8dc2c5b83c4a12ac2ee2f53d8ac8fa20120",
+  "base_checkpoint_sha256": "83569cb406e2327a34d9a75b186107f6fcc46ca4bcaebda893274e86a6f7b0f6",
+  "advanced_checkpoint_sha256": "06dc0b0a000559b4e99d6d80637689f5071b42efae5cf419bc06b19ea5c272e5",
+  "expected_publications": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    21,
+    25,
+    31,
+    32,
+    33,
+    39
+  ],
+  "base_groups": [
+    [
+      1,
+      5
+    ],
+    [
+      5,
+      9,
+      13
+    ],
+    [
+      13,
+      17,
+      21,
+      25
+    ],
+    [
+      31
+    ]
+  ],
+  "advanced_groups": [
+    [
+      31,
+      32,
+      39
+    ],
+    [
+      33
+    ]
+  ],
+  "rechecked_publications": [
+    1,
+    32
+  ],
+  "expected_new_publications": [
+    32,
+    33,
+    39
+  ]
+}

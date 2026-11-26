@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "kind": "educreditlab-review-plan",
+  "manifest_sha256": "335e36be246e40e2b74e335e7764052ad38090089670c0d0e09a1e137c1609bf",
+  "checkpoint_sha256": "7367ee6aa27eb29ec5dee1aab80c4a6fa44713f12760b4aa29b607664556ea58",
+  "requirements": [
+    {
+      "receipt_sha256": "12cd488a11ad7eccd2849970d7fbfd4b896756eb4d2e02649fa2ff0f6ced0a22",
+      "mode": "replay"
+    },
+    {
+      "receipt_sha256": "47375ff76f5f6f214f82756577f8f4cf564ca2134b5b1a6531c22fbdb89f58ec",
+      "mode": "replay"
+    },
+    {
+      "receipt_sha256": "7890d8bb45e6ade699a636d84d465d85e446084e19f89e0e2e11391884215d83",
+      "mode": "anchor"
+    }
+  ]
+}

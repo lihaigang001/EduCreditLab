@@ -1,0 +1,138 @@
+{
+  "software_version": "1.8.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "checkpoint": {
+    "schema": 1,
+    "profile": "educreditlab-receipt-checkpoint-v1",
+    "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+    "height": 10000,
+    "head_sha256": "4372141935dc5d2a23025b1a33aa9476e56ad0568fa26107659512dc04418755",
+    "leaf_count": 9999,
+    "root_sha256": "cba7037400be97599a57e2280b21efc2158fc0f47253280590d2ba8f9454cfe1"
+  },
+  "checkpoint_sha256": "94dc888f7833f6cd68b0439ecbf24cac80e6e48232e24dd06209bcdd0b6e29ba",
+  "receipt_count": 128,
+  "cases": [
+    {
+      "replay_count": 0,
+      "anchor_count": 128,
+      "attached_evidence_count": 0,
+      "uniform_gzip_bytes": 39858,
+      "uniform_files": 1,
+      "planned_gzip_bytes": 44383,
+      "review_plan_sha256": "bc6cea39393cf4de7b82eaed3d919a4d726a7a30f9b72f173f0284373ce5bf60",
+      "same_receipt_results": true,
+      "uniform_verify": {
+        "samples_ms": [
+          6.07928,
+          4.41313,
+          4.36344,
+          4.59254,
+          4.35117
+        ],
+        "median_ms": 4.41313
+      },
+      "planned_verify": {
+        "samples_ms": [
+          4.65709,
+          4.67604,
+          4.54235,
+          4.49756,
+          4.69712
+        ],
+        "median_ms": 4.65709
+      }
+    },
+    {
+      "replay_count": 16,
+      "anchor_count": 112,
+      "attached_evidence_count": 16,
+      "uniform_gzip_bytes": 48891,
+      "uniform_files": 2,
+      "planned_gzip_bytes": 49876,
+      "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+      "same_receipt_results": true,
+      "uniform_verify": {
+        "samples_ms": [
+          49.59319,
+          50.08174,
+          49.92334,
+          49.48492,
+          49.63992
+        ],
+        "median_ms": 49.63992
+      },
+      "planned_verify": {
+        "samples_ms": [
+          51.68938,
+          50.8022,
+          51.42444,
+          54.16736,
+          52.24108
+        ],
+        "median_ms": 51.68938
+      }
+    },
+    {
+      "replay_count": 64,
+      "anchor_count": 64,
+      "attached_evidence_count": 64,
+      "uniform_gzip_bytes": 58931,
+      "uniform_files": 2,
+      "planned_gzip_bytes": 57392,
+      "review_plan_sha256": "eca2131655627e4b1db68573cecd6df03e0673e6b3697e45071b498c29855360",
+      "same_receipt_results": true,
+      "uniform_verify": {
+        "samples_ms": [
+          189.9189,
+          199.77985,
+          189.90009,
+          189.58801,
+          187.36295
+        ],
+        "median_ms": 189.90009
+      },
+      "planned_verify": {
+        "samples_ms": [
+          192.91118,
+          247.40281,
+          190.0715,
+          198.9792,
+          258.99473
+        ],
+        "median_ms": 198.9792
+      }
+    },
+    {
+      "replay_count": 128,
+      "anchor_count": 0,
+      "attached_evidence_count": 128,
+      "uniform_gzip_bytes": 63005,
+      "uniform_files": 1,
+      "planned_gzip_bytes": 67536,
+      "review_plan_sha256": "bfefce320be130e1c0fd35c572ba9461edb6aacfd6494f5c2f0a4d1d4527dbd2",
+      "same_receipt_results": true,
+      "uniform_verify": {
+        "samples_ms": [
+          370.62835,
+          383.59158,
+          386.13432,
+          445.78403,
+          406.04532
+        ],
+        "median_ms": 386.13432
+      },
+      "planned_verify": {
+        "samples_ms": [
+          381.98598,
+          381.26438,
+          384.01436,
+          433.47174,
+          382.17478
+        ],
+        "median_ms": 382.17478
+      }
+    }
+  ]
+}

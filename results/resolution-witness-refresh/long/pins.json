@@ -1,0 +1,12 @@
+{
+  "initial_authority_sha256": "332b9fb995e80d2ad3278caddcac7a1a772278c90d521557ce6662d3940551f9",
+  "incoming_authority_sha256": "dbb259f05447fc03413b82b338da58efa499d57754456f69225cefcc602c22a5",
+  "base_publication_count": 1023,
+  "base_publication_sha256": "a697e5ba0fa382454617ce15ca9a4110df9ce4729db878347f7aed9ffde3da56",
+  "latest_publication_sha256": "1ae8214ddbb4b88d877109f2e5059fe1c65c1aa8816e0d17d2ec7a4797d1fef5",
+  "base_checkpoint_sha256": "cf20b893b831d5e6033a9866f48ef43dd7dc58b44cb63ac35a796a588370620b",
+  "advanced_checkpoint_sha256": "923f2bec1e1044e411f193a500de8f992dc843af8faf12a285b5f0e97c9b8325",
+  "archived_publication": 1,
+  "archived_authority_sha256": "332b9fb995e80d2ad3278caddcac7a1a772278c90d521557ce6662d3940551f9",
+  "archived_decision_sha256": "1857c52d90ed5161f0b87afc8aa6f6f5712f9912e0a939870abaec32456d9e64"
+}

@@ -1,0 +1,158 @@
+{
+  "software_version": "1.22.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "repeats": 21,
+  "original_review": {
+    "receipt_count": 128,
+    "replay_count": 16,
+    "anchor_count": 112,
+    "checkpoint_height": 10000,
+    "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+    "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+    "checkpoint_sha256": "94dc888f7833f6cd68b0439ecbf24cac80e6e48232e24dd06209bcdd0b6e29ba",
+    "proof_sha256": "82273a99c755a970e3f90d38be632e7f1d0281b4fbefa2a7ecea276f4443da59",
+    "result_sha256": "7cf1078c06648c1b587728ed051e2f4ec68777b817f5a9ba7cbf88e585a960c6"
+  },
+  "cases": [
+    {
+      "publication_count": 39,
+      "source_proof_count": 4,
+      "source_membership_count": 10,
+      "union_count": 8,
+      "overlap_count": 2,
+      "full_history_gzip_bytes": 9753,
+      "sources_gzip_bytes": 3590,
+      "sources_array_gzip_bytes": 1912,
+      "merged_gzip_bytes": 1490,
+      "full_audit": {
+        "samples_ms": [
+          17.13949,
+          14.16093,
+          20.77057,
+          15.42049,
+          15.34192,
+          14.93737,
+          14.13807,
+          15.69606,
+          14.0856,
+          15.76831,
+          14.54257,
+          15.45895,
+          14.72813,
+          15.31829,
+          13.71239,
+          14.59521,
+          13.49515,
+          14.33734,
+          21.1913,
+          14.14329,
+          15.09374
+        ],
+        "median_ms": 14.93737
+      },
+      "merge": {
+        "samples_ms": [
+          0.83623,
+          0.65748,
+          0.69873,
+          0.64086,
+          0.58676,
+          0.53939,
+          0.81389,
+          0.59798,
+          0.56255,
+          0.72897,
+          0.56771,
+          0.88978,
+          0.79288,
+          0.64233,
+          0.55395,
+          0.57586,
+          0.5401,
+          0.5766,
+          0.59786,
+          0.77297,
+          0.63012
+        ],
+        "median_ms": 0.63012
+      },
+      "checkpoint_sha256": "06dc0b0a000559b4e99d6d80637689f5071b42efae5cf419bc06b19ea5c272e5",
+      "matches_full_audit": true,
+      "distinct_authorities": 1,
+      "rechecked_publications": [
+        1
+      ]
+    },
+    {
+      "publication_count": 1031,
+      "source_proof_count": 4,
+      "source_membership_count": 34,
+      "union_count": 32,
+      "overlap_count": 2,
+      "full_history_gzip_bytes": 210642,
+      "sources_gzip_bytes": 10626,
+      "sources_array_gzip_bytes": 8790,
+      "merged_gzip_bytes": 8163,
+      "full_audit": {
+        "samples_ms": [
+          374.00612,
+          386.71647,
+          364.5964,
+          344.24413,
+          321.33133,
+          337.48244,
+          347.35352,
+          362.00125,
+          368.61841,
+          367.89797,
+          332.94991,
+          334.37597,
+          339.86915,
+          342.89939,
+          352.6856,
+          413.31496,
+          366.74083,
+          342.22621,
+          382.57454,
+          327.75666,
+          399.59951
+        ],
+        "median_ms": 352.6856
+      },
+      "merge": {
+        "samples_ms": [
+          3.87611,
+          2.16282,
+          1.88071,
+          1.81348,
+          1.78873,
+          1.99398,
+          1.93589,
+          1.94873,
+          2.08426,
+          1.93041,
+          2.05927,
+          1.99237,
+          1.89155,
+          1.77162,
+          2.21649,
+          1.88501,
+          1.93543,
+          1.87173,
+          1.81468,
+          1.91423,
+          1.80019
+        ],
+        "median_ms": 1.93041
+      },
+      "checkpoint_sha256": "923f2bec1e1044e411f193a500de8f992dc843af8faf12a285b5f0e97c9b8325",
+      "matches_full_audit": true,
+      "distinct_authorities": 2,
+      "rechecked_publications": [
+        1,
+        1024
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "initial_authority_sha256": "d4d43bc305ffdbce4a81413d1d9558c94f3c5869035b7890ce9e78b8fe7ad9c0",
+  "incoming_authority_sha256": "2a64adfe8da79a7379f56ef154a3852e2984ffdc54dd161fd74cb308a09f85dd",
+  "base_publication_count": 8191,
+  "base_publication_sha256": "42dd1a83a9c351f1b3383e3c4b4b3a9644e9637212e6e515dce575fedfd267fb",
+  "latest_publication_sha256": "38c69627ac9dd1f4c89709934419ce16ccea11dd11992214517733fb14629141"
+}

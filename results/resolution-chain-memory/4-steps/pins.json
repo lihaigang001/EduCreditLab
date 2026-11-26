@@ -1,0 +1,31 @@
+{
+  "base_checkpoint_sha256": "0c3129e0179bc9e359b0e6a74aff79238924e032f464823fbd9e8b79df8fb7ec",
+  "final_checkpoint_sha256": "5414079680bdcfb38431744d5e959c65c7a8f249322ecb7008daa9ea42adde4b",
+  "stage_publication_sha256": [
+    "007e135113c398acd117c3dc07f57a11a243582c9a54d3f7d80f41f76a785bfb",
+    "85fab4950e80c1448c0a20222515c187113d849e35ee0b3090aec3e5237290d7",
+    "01ecfecf422dc5bba2618b43373175f5066d3c6f2cf37fcd5ed05e35a73a3da1",
+    "38c69627ac9dd1f4c89709934419ce16ccea11dd11992214517733fb14629141"
+  ],
+  "checkpoint_counts": [
+    31,
+    4127,
+    8223,
+    12319,
+    16415
+  ],
+  "expected_publications": [
+    1,
+    31,
+    4127,
+    8192,
+    8223,
+    12319,
+    16414,
+    16415
+  ],
+  "expected_new_publications": [
+    8192,
+    16414
+  ]
+}

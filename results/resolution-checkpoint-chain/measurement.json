@@ -1,0 +1,241 @@
+{
+  "software_version": "1.25.0",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "repeats": 21,
+  "original_review": {
+    "receipt_count": 128,
+    "replay_count": 16,
+    "anchor_count": 112,
+    "checkpoint_height": 10000,
+    "review_plan_sha256": "a776a11bae66dbdc5263cec0eb91db5e4ed22c26286f94275ee5e3dc0ebdfabc",
+    "manifest_sha256": "41dd2c08bbd65a563a9f5250182fa64cfec7c77610e3f9f3545a0e0b5a21f1a0",
+    "checkpoint_sha256": "94dc888f7833f6cd68b0439ecbf24cac80e6e48232e24dd06209bcdd0b6e29ba",
+    "proof_sha256": "82273a99c755a970e3f90d38be632e7f1d0281b4fbefa2a7ecea276f4443da59",
+    "result_sha256": "7cf1078c06648c1b587728ed051e2f4ec68777b817f5a9ba7cbf88e585a960c6"
+  },
+  "cases": [
+    {
+      "checkpoint_counts": [
+        31,
+        34,
+        39
+      ],
+      "stage_publication_sha256": [
+        "8cff5a33f1ae9a709af512c6c3d143e771a75fdcf93964e69857ede8dd665d1e",
+        "3235879fa9cf97317ed39737aef5e8dc2c5b83c4a12ac2ee2f53d8ac8fa20120"
+      ],
+      "stage_publication_counts": [
+        3,
+        5
+      ],
+      "retained_witness_files": 6,
+      "derived_publications": [
+        32,
+        38
+      ],
+      "combined_count": 13,
+      "full_history_gzip_bytes": 9753,
+      "chain_input_gzip_bytes": 9372,
+      "sequential_input_gzip_bytes": 9944,
+      "combined_gzip_bytes": 1753,
+      "checkpoint_sha256": "06dc0b0a000559b4e99d6d80637689f5071b42efae5cf419bc06b19ea5c272e5",
+      "full_audit": {
+        "samples_ms": [
+          17.06368,
+          31.53877,
+          94.05097,
+          17.40138,
+          27.85296,
+          22.45153,
+          19.05505,
+          15.57671,
+          28.73243,
+          18.81368,
+          14.28717,
+          13.88571,
+          14.20306,
+          15.05808,
+          15.35333,
+          17.07867,
+          22.07318,
+          28.4219,
+          14.16157,
+          13.62393,
+          16.3988
+        ],
+        "median_ms": 17.07867
+      },
+      "sequential_merge": {
+        "samples_ms": [
+          7.27426,
+          6.71517,
+          7.07688,
+          6.98425,
+          6.95927,
+          8.50979,
+          6.87844,
+          8.05392,
+          12.85183,
+          7.90162,
+          7.52137,
+          8.50721,
+          6.85401,
+          7.03862,
+          7.18391,
+          7.31297,
+          6.8126,
+          8.45236,
+          8.01756,
+          8.1927,
+          10.61881
+        ],
+        "median_ms": 7.31297
+      },
+      "chain_merge": {
+        "samples_ms": [
+          7.5249,
+          11.23399,
+          7.74909,
+          6.21894,
+          5.87556,
+          12.53025,
+          36.5844,
+          10.42425,
+          7.76881,
+          7.37395,
+          6.59214,
+          6.91257,
+          6.97632,
+          6.0353,
+          6.63998,
+          6.56858,
+          5.87653,
+          6.91791,
+          6.6715,
+          6.16291,
+          7.47414
+        ],
+        "median_ms": 6.91791
+      },
+      "matches_full_audit": true,
+      "matches_sequential_merge": true,
+      "distinct_authorities": 2,
+      "rechecked_publications": [
+        1,
+        32
+      ]
+    },
+    {
+      "checkpoint_counts": [
+        1023,
+        1026,
+        1031
+      ],
+      "stage_publication_sha256": [
+        "a171a711e444323796979c9b2bfa1aa5ae2e4101410fe31ed71c177b21fc42ef",
+        "1ae8214ddbb4b88d877109f2e5059fe1c65c1aa8816e0d17d2ec7a4797d1fef5"
+      ],
+      "stage_publication_counts": [
+        3,
+        5
+      ],
+      "retained_witness_files": 6,
+      "derived_publications": [
+        1024,
+        1030
+      ],
+      "combined_count": 35,
+      "full_history_gzip_bytes": 210642,
+      "chain_input_gzip_bytes": 16575,
+      "sequential_input_gzip_bytes": 17148,
+      "combined_gzip_bytes": 8239,
+      "checkpoint_sha256": "923f2bec1e1044e411f193a500de8f992dc843af8faf12a285b5f0e97c9b8325",
+      "full_audit": {
+        "samples_ms": [
+          521.81426,
+          432.80937,
+          362.16252,
+          384.78581,
+          369.15364,
+          409.6761,
+          397.75237,
+          468.54446,
+          490.42576,
+          516.54762,
+          404.12405,
+          426.94874,
+          328.98039,
+          346.97154,
+          348.00629,
+          335.81373,
+          469.81263,
+          359.23903,
+          350.71376,
+          359.71386,
+          439.07252
+        ],
+        "median_ms": 397.75237
+      },
+      "sequential_merge": {
+        "samples_ms": [
+          12.62632,
+          12.27142,
+          11.84348,
+          11.75377,
+          12.08436,
+          15.31034,
+          12.36533,
+          13.36324,
+          13.37215,
+          13.41452,
+          16.97931,
+          15.29162,
+          13.82341,
+          15.03185,
+          11.95146,
+          13.76345,
+          12.96114,
+          11.85726,
+          12.42081,
+          11.68921,
+          12.484
+        ],
+        "median_ms": 12.62632
+      },
+      "chain_merge": {
+        "samples_ms": [
+          8.94416,
+          8.9603,
+          10.96061,
+          11.73945,
+          11.60252,
+          10.5991,
+          10.81765,
+          9.77814,
+          8.88246,
+          9.35392,
+          10.01921,
+          9.28773,
+          10.35988,
+          16.38567,
+          12.6739,
+          11.21229,
+          13.70752,
+          13.00913,
+          12.96601,
+          13.14406,
+          13.0154
+        ],
+        "median_ms": 10.96061
+      },
+      "matches_full_audit": true,
+      "matches_sequential_merge": true,
+      "distinct_authorities": 2,
+      "rechecked_publications": [
+        1,
+        1024
+      ]
+    }
+  ]
+}

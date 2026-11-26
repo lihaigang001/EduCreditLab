@@ -1,0 +1,7 @@
+{
+  "initial_authority_sha256": "9572caef0cd77d413f5e4a64dd460000ac32aeab1ede9e5bfe79bcb1b6b92983",
+  "active_authority_sha256": "7d47acbbf794e8f5ff606e863447923c024721c13db53a347d63a3dfb325d467",
+  "latest_publication_sha256": "af5f558a956e841c9ddc5cd3627bd57a225e4585dd3610baa0d9320e456ebfd5",
+  "current_decision_sha256": "c69c66197b794f56fa89348df241a344a98d482cbad3e4e71dc716f721678b6b",
+  "publication_checkpoint_sha256": "d37860f868da50e5b3435378ea946e9350eedb66e007fe7d8d203209be2164d8"
+}

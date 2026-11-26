@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "kind": "educreditlab-review-policy-resolution-authority",
+  "initial_policy_sha256": "a8cd537dfd851b225aba790925225095ef92f3e793534ad1159f73d61a11f532",
+  "resolver_sha256": [
+    "6622eb23f1d8420540350544879f57d5d209cb754852812933a70a1d108f6852",
+    "91fd2a8cd0bb5de7258c304ae2eb653b512db2ecfd8f476e513f70554cbaf380",
+    "a86c297aa7bf9ecc5cfde8c24ca573acb956306a66b3e6b9b03600336c4b8c5d"
+  ],
+  "threshold": 2
+}

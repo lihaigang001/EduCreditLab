@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "kind": "educreditlab-resolution-publication-checkpoint",
+  "history_sha256": "2928101974bed3bb84fc391c5243218a2f83a2fc3e1cc478514299f2603df309",
+  "initial_authority_sha256": "9572caef0cd77d413f5e4a64dd460000ac32aeab1ede9e5bfe79bcb1b6b92983",
+  "divergence_sha256": "4b4eda54f2927c2e194ad50dfc24b0c70c1e130de96b1ae5a4edcd7baeb667c7",
+  "publication_count": 3,
+  "latest_publication_sha256": "af5f558a956e841c9ddc5cd3627bd57a225e4585dd3610baa0d9320e456ebfd5",
+  "merkle_root": "531b1fa536a282645c61ccdb90d322a327dd5b2c04a637d112335e16956f567f"
+}

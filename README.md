@@ -187,9 +187,13 @@ The local research ledger runs on one host with a single coordinator, fixed memb
 
 Source code is distributed under the MIT License. Source agreements are identified in [Data and protocol](docs/data-and-protocol.md).
 
+## Authors
+
+- **Haonan Zhang** — College of Teacher Education, Qiqihar University, Qiqihar, China 161003 — 2025933211@qqhru.edu.cn
+- **Haigang Li** (maintainer) — College of Teacher Education, Qiqihar University, Qiqihar, China 161003 — lihaigang02292@qqhru.edu.cn
+
 ## Cite this software
 
 The Zenodo concept DOI for this software is [10.5281/zenodo.24564737](https://doi.org/10.5281/zenodo.24564737). For the **v1.28.1** release, use its version-specific DOI: [10.5281/zenodo.24564738](https://doi.org/10.5281/zenodo.24564738).
 
-> lihaigang001. (2026). *EduCreditLab* (v1.28.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24564738
-
+> Zhang, H., & Li, H. (2026). *EduCreditLab* (v1.28.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24564738

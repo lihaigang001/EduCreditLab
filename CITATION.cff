@@ -8,11 +8,15 @@ url: "https://github.com/lihaigang001/EduCreditLab"
 repository-code: "https://github.com/lihaigang001/EduCreditLab"
 license: MIT
 authors:
-  - name: "lihaigang001"
+  - family-names: Zhang
+    given-names: Haonan
+    affiliation: College of Teacher Education, Qiqihar University
+  - family-names: Li
+    given-names: Haigang
+    affiliation: College of Teacher Education, Qiqihar University
 keywords:
   - "course articulation"
   - "credit allocation"
   - "higher education"
   - "academic credit transfer"
   - "auditable software"
-
